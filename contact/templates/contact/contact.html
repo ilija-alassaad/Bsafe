@@ -1,0 +1,146 @@
+﻿{% extends 'base.html' %} {% load static %} {%block content%}
+
+<!-- end header -->
+<!-- start page title -->
+<section class="page-title-big-typography bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5" style="background-image: url(/static/assets/images/bsafe/contact-banner.png)">
+  <!-- img size 1920*1100-->
+  <div class="opacity-extra-medium bg-dark-slate-blue"></div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center extra-small-screen">
+      <div class="col-12 position-relative text-center page-title-extra-large">
+        <h1 class="m-auto text-white text-shadow-double-large fw-500 ls-minus-3px xs-ls-minus-2px" data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+          Launch The Business
+        </h1>
+      </div>
+      <div class="down-section text-center" data-anime='{ "translateY": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <a href="#down-section" aria-label="scroll down" class="section-link">
+          <div class="d-flex justify-content-center align-items-center mx-auto rounded-circle fs-30 text-white">
+            <i class="feather icon-feather-chevron-down"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end page title -->
+
+<!-- start section -->
+<section id="down-section" class="overflow-hidden">
+  <div class="container">
+    <div class="row mb-60">
+      {%for info in contact_info|slice:":3"%}
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h4 class="mb-15 text-brand">{{info.description}}</h4>
+        {{info.full_address|slice:"0:32"}}<br />
+        {{info.full_address|slice:"32:"}}<br />
+        <abbr title="Phone">Phone:</abbr> {{info.phone}}<br />
+        <abbr title="Email">Email: </abbr>{{info.email}}<br />
+        {%if info.map_link%}
+        <a href="{{info.map_link}}" class="btn btn-sm font-weight-bold text-white mt-20 border-radius-5 btn-shadow-brand hover-up"><i class="fi-rs-marker mr-5"></i>View map</a>
+        {%endif%}
+      </div>
+      {%endfor%}
+    </div>
+    <div class="row g-0 justify-content-center">
+      <div class="col-lg-2 col-md-6" data-anime='{ "translateX": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <div class="h-100 sm-h-500px xs-h-400px cover-background" style="background-image: url({%static 'assets/images/bsafe/contact.jpg' %})"></div>
+      </div>
+
+      <div class="col-lg-5 col-md-6" data-anime='{ "translateX": [15, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <div class="bg-base-color p-7  h-100">
+          <h6 class="text-white text-decoration-line-bottom mb-10px d-inline-block">Belguim</h6>
+          <p class="text-white opacity-5 text-decoration-line-bottom mb-10px ">Address1 - Brussels</p>
+          <p class="text-white mb-1 opacity-5">
+            Pl. Adolphe Sax 4, 1050 Ixelles - Brussels 1050
+          </p>
+          <p>
+            <a href="tel:+32487419847" class="text-white opacity-5">+32 48 741 9847</a>
+          </p>
+          <p class="text-white opacity-5 text-decoration-line-bottom mb-10px ">Address2 - Flanders</p>
+          <p class="text-white mb-1 opacity-5">
+            Vrasenestraat 29, 9100 Sint-Niklaas - Flanders 9100
+          </p>
+          <p>
+            <a href="tel:+32487419847" class="text-white opacity-5">+32 47 098 2341</a>
+          </p>
+          <h6 class="text-white text-decoration-line-bottom mb-10px d-inline-block">Latvia</h6>
+          <p class="text-white mb-1 opacity-5">
+            Stockmann, 13. janvāra iela 8, 3rd floor
+          </p>
+          <p>
+            <a href="tel:+32487419847" class="text-white opacity-5">+37 12 558 1091</a>
+          </p>
+          <span class="text-white text-decoration-line-bottom mb-10px d-inline-block">Need live support?</span>
+          <a href="mailto:Bsafeintl.eu@gmail.com" class="text-white opacity-5 d-block">info@bsafegroup.eu</a>
+          <a href="mailto:help@yourdomain.com" class="text-white opacity-5 d-block">support@bsafegroup.eu</a>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1">
+        {% if messages %} {% for message in messages %}
+
+        <div id="message" class="mt-30 alert align-middle alert-{{message.tags}}">
+          <span class="align-middle"> {{message}}</span>
+        </div>
+
+        {% endfor %} {% endif %}
+        <div class="pt-5 md-pt-45px contact-form-style-01" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+          <h6 class="d-inline-block alt-font fw-600 text-dark-gray ls-minus-1px mb-30px">
+            Reach To Us & Let's Grow Together
+
+          </h6>
+          <!-- start contact form -->
+          <form method="POST" action="{% url 'contact:contact' %}">
+            {% csrf_token %}
+            <div class="position-relative form-group mb-20px">
+              <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+              <input type="text" name="name" class="form-control required" placeholder="Your name*" required />
+            </div>
+            <div class="position-relative form-group mb-20px">
+              <span class="form-icon"><i class="bi bi-envelope"></i></span>
+              <input type="email" name="email" class="form-control required" placeholder="Your email address*" required />
+            </div>
+            <div class="position-relative form-group mb-20px">
+              <span class="form-icon"><i class="bi bi-phone"></i></span>
+              <input type="tel" name="phone" class="form-control required" placeholder="Your phone*" required />
+            </div>
+            <div class="position-relative form-group mb-20px">
+              <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+              <input type="text" name="subject" class="form-control required" placeholder="Subject*" required />
+            </div>
+            <div class="position-relative form-group form-textarea">
+              <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+              <textarea placeholder="Your message" name="message" class="form-control" rows="3" required></textarea>
+            </div>
+            <button class="btn btn-small btn-round-edge btn-dark-gray btn-box-shadow mt-20px m-auto" type="submit">
+              Send message
+            </button>
+          </form>
+
+          <!-- end contact form -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->
+
+<!--FAQ-->
+
+
+<!-- start section map -->
+<!--
+    <section class="p-0" id="location" data-anime='{ "translate": [0, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 p-0">
+                    <div id="map" class="map"
+                        data-map-options='{ "lat": -37.805688, "lng": 144.962312, "style": "Silver", "marker": { "type": "HTML", "color": "#aa1e23" }, "popup": { "defaultOpen": false, "html": "<div class=infowindow><strong class=\"mb-3 d-inline-block alt-font\">Crafto Business</strong><p class=\"alt-font\">16122 Collins street, Melbourne, Australia</p></div><div class=\"google-maps-link alt-font\"> <a aria-label=\"View larger map\" target=\"_blank\" jstcache=\"31\" href=\"{{info.map_link}}" jsaction=\"mouseup:placeCard.largerMap\">VIEW LARGER MAP</a></div>" } }'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+<!-- end section -->
+
+{%endblock content%}

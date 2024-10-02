@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+form.appt-calendar-wrapper {
+    margin: 0 auto;
+    width: 450px;
+}
+form.appt-calendar-wrapper:before, form.appt-calendar-wrapper:after {
+    content: " ";
+    display: table;
+}
+form.appt-calendar-wrapper:after {
+    clear: both;
+}
+form.appt-calendar-wrapper > .appt-calendar {
+    float: left;
+    width: 65%;
+}
+form.appt-calendar-wrapper > .appt-calendar > .month-controls {
+    display: flex;
+    margin: 0 0 5px;
+}
+form.appt-calendar-wrapper > .appt-calendar > .month-controls > .prev, form.appt-calendar-wrapper > .appt-calendar > .month-controls > .next {
+    border-radius: 3px;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 26px;
+    padding: 5px;
+    text-align: center;
+}
+form.appt-calendar-wrapper > .appt-calendar > .month-controls > .prev:hover, form.appt-calendar-wrapper > .appt-calendar > .month-controls > .next:hover {
+    background: #066ddb;
+    color: #fff;
+}
+form.appt-calendar-wrapper > .appt-calendar > .month-controls > p {
+    flex-basis: 0;
+    flex-grow: 5;
+    flex-shrink: 5;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: center;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week {
+    display: flex;
+    margin: 0 0 5px;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week:before, form.appt-calendar-wrapper > .appt-calendar > .week:after {
+    content: " ";
+    display: table;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week:after {
+    clear: both;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > label {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 6px;
+    position: relative;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > label + label, form.appt-calendar-wrapper > .appt-calendar > .week > label + .day {
+    margin: 0 0 0 5px;
+    font-size: 100%;
+    font-weight: normal;
+    text-transform: none;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > label > .day {
+    background: #97c8fc;
+    left: 0px;
+    padding: 6px 0;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > label > .day:hover {
+    background: #066ddb;
+    color: #fff;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > label > input[type="radio"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > label > input[type="radio"]:focus ~ .day {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > label > input[type="radio"]:checked ~ .day {
+    background: #db5006;
+    color: #fff;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > label > input[type="radio"]:checked ~ .day:hover {
+    background: #db5006;
+    color: #fff;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > .day {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 6px;
+    text-align: center;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > .day + .day, form.appt-calendar-wrapper > .appt-calendar > .week > .day + label {
+    margin: 0 0 0 5px;
+    font-size: 100%;
+    font-weight: normal;
+    text-transform: none;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > .day.sat, form.appt-calendar-wrapper > .appt-calendar > .week > .day.sun, form.appt-calendar-wrapper > .appt-calendar > .week > .day.off {
+    background: #ccc;
+    color: #666;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week > .day.out {
+    background: #eee;
+    color: #444;
+}
+form.appt-calendar-wrapper > .appt-calendar > .week.legend > .day {
+    background: transparent;
+    padding: 0 6px;
+}
+form.appt-calendar-wrapper > .appt-times {
+    float: left;
+    height: 275px;
+    margin: 0 0 0 15px;
+    position: relative;
+    width: 30%;
+}
+form.appt-calendar-wrapper > .appt-times > label {
+    bottom: 0px;
+    display: block;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+form.appt-calendar-wrapper > .appt-times > label > select {
+    display: block;
+    font-size: 18px;
+    height: 205px;
+    margin-top: 7px;
+    width: 100%;
+}
+form.appt-calendar-wrapper > .appt-times > label > select > option {
+    padding: 5px;
+}
+form.appt-calendar-wrapper > .appt-times > label > select > option:hover {
+    background: #066ddb;
+    color: #fff;
+}
+form.appt-calendar-wrapper > .appt-times > label > select > option:checked {
+    background-color: #db5006;
+    background-image: linear-gradient(#db5006,#db5006);
+    color: #fff;
+}
+form.appt-calendar-wrapper > .appt-times > label > select > option:checked:hover {
+    background-color: #db5006;
+    background-image: linear-gradient(#db5006,#db5006);
+    color: #fff;
+}

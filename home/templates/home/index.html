@@ -1,0 +1,629 @@
+﻿{% extends "base.html" %} {% load static %} {% block content %}
+<!-- start section -->
+<section class="section-dark p-0 bg-dark-gray">
+  <div class="swiper lg-no-parallax magic-cursor full-screen md-h-600px sm-h-500px ipad-top-space-margin swiper-light-pagination"
+    data-slider-options='{ "slidesPerView": 1, "loop": true, "parallax": true, "speed": 1000, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+    <div class="swiper-wrapper">
+      <!-- start slider item -->
+      <div class="swiper-slide overflow-hidden">
+        <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500" style="
+                background-image: url('/static/assets/images/bsafe/home-carousel-3.jpg');
+              ">
+          <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+          <div class="container h-100" data-swiper-parallax="-500">
+            <div class="row align-items-center h-100">
+              <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start" data-anime='{ "el": "childs", "translateX": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div>
+                  <span class="fs-20 opacity-6 mb-25px sm-mb-15px d-inline-block fw-300">Workplace Safety Is For Today</span>
+                </div>
+                <h1 class="alt-font w-90 xl-w-100 text-shadow-double-large ls-minus-2px">
+                  BSAFE GROUP
+                </h1>
+
+                <a href="{% url 'home:HSEQ' %}" data-url="" class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0">HSEQ starts here<span class="bg-white text-base-color"><i class="fa-solid fa-arrow-right"></i></span></a>
+
+
+
+
+              </div>
+              <div class="position-absolute bottom-minus-45px" data-anime='{ "translateY": [150, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <span class="alt-font number text-base-color opacity-3 fs-190 fw-600 ls-minus-5px">01</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide overflow-hidden">
+        <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500" style="
+            background-image: url('/static/assets/images/bsafe/home-carousel-1.jpg');
+          ">
+          <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+          <div class="container h-100" data-swiper-parallax="-500">
+            <div class="row align-items-center h-100">
+              <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start" data-anime='{ "el": "childs", "translateX": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div>
+                  <span class="fs-20 opacity-6 mb-25px sm-mb-15px d-inline-block fw-300">Environmental Sustainablility Strategies</span>
+                </div>
+                <h1 class="alt-font w-90 xl-w-100 text-shadow-double-large ls-minus-2px">
+                  International Project
+                  <span class="fw-600"> Solutions</span>
+                </h1>
+                <a href="" data-url="{% url 'booking:book_appointment' %}" class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">operational HSEQ starts here<span
+                    class="bg-white text-base-color"><i class="fas fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+            <div class="position-absolute bottom-minus-45px" data-anime='{ "translateY": [150, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+              <span class="alt-font number text-base-color opacity-3 fs-190 fw-600 ls-minus-5px">02</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide overflow-hidden">
+        <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500" style="
+            background-image: url('{%static 'assets/images/bsafe/home-carousel-4.jpg' %}');
+          ">
+          <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+          <div class="container h-100" data-swiper-parallax="-500">
+            <div class="row align-items-center h-100">
+              <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start" data-anime='{ "el": "childs", "translateX": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div>
+                  <span class="fs-20 opacity-6 mb-25px sm-mb-15px d-inline-block fw-300">Exceeding The WEB Fiction</span>
+                </div>
+                <h1 class="alt-font w-90 xl-w-100 text-shadow-double-large ls-minus-2px">
+                  <span class="fw-600"> Web Applications</span>
+                </h1>
+                <a href="" data-url="{% url 'booking:book_appointment' %}" class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Web Dev Starts Here<span
+                    class="bg-white text-base-color"><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+              <div class="position-absolute bottom-minus-45px" data-anime='{ "translateY": [150, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <span class="alt-font number text-base-color opacity-3 fs-190 fw-600 ls-minus-5px">03</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide overflow-hidden">
+        <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500" style="background-image: url('{%static 'assets/images/bsafe/home-carousel-5.jpg' %}');">
+          <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+          <div class="container h-100" data-swiper-parallax="-500">
+            <div class="row align-items-center h-100">
+              <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start" data-anime='{ "el": "childs", "translateX": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div>
+                  <span class="fs-20 opacity-6 mb-25px sm-mb-15px d-inline-block fw-300">Heartbeat Of Our Visual Identity</span>
+                </div>
+                <h1 class="alt-font w-90 xl-w-100 text-shadow-double-large ls-minus-2px">
+                  <span class="fw-600"> Branding & Marketing </span>
+                </h1>
+                <a href="" data-url="{% url 'booking:book_appointment' %}" class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Your Trademark starts here<span
+                    class="bg-white text-base-color"><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+              <div class="position-absolute bottom-minus-45px" data-anime='{ "translateY": [150, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <span class="alt-font number text-base-color opacity-3 fs-190 fw-600 ls-minus-5px">04</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end slider item -->
+      <!-- start slider item -->
+
+      <!-- end slider item -->
+      <!-- start slider item -->
+      <div class="swiper-slide overflow-hidden">
+        <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500" style="
+            background-image: url('/static/assets/images/bsafe/home-carousel-2.jpg');
+          ">
+          <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+          <div class="container h-100" data-swiper-parallax="-500">
+            <div class="row align-items-center h-100">
+              <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start" data-anime='{ "el": "childs", "translateX": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div>
+                  <span class="fs-20 opacity-6 mb-25px sm-mb-15px d-inline-block fw-300">Airport Safety Explains It All</span>
+                </div>
+                <h1 class="alt-font w-90 xl-w-100 text-shadow-double-large ls-minus-2px">
+                  Shape The <span class="fw-600"> HSEQ</span> Future
+                </h1>
+                <a href="" data-url="{% url 'booking:book_appointment' %}" class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Training starts here<span
+                    class="bg-white text-base-color"><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+              <div class="position-absolute bottom-minus-45px" data-anime='{ "translateY": [150, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <span class="alt-font number text-base-color opacity-3 fs-190 fw-600 ls-minus-5px">05</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end slider item -->
+
+    </div>
+
+  </div>
+</section>
+<!-- end section -->
+
+<!-- start section -->
+<section class="border-bottom border-color-extra-medium-gray pt-40px pb-40px overflow-hidden">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center align-items-center" data-anime='{ "el": "childs", "translateX": [-15, 0], "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+      <!-- start features box item -->
+      <div class="col icon-with-text-style-08 md-mb-30px text-center text-sm-start">
+        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+          <div class="feature-box-icon me-10px">
+            <i class="bi bi-shield-check icon-very-medium text-base-color"></i>
+          </div>
+          <div class="feature-box-content">
+            <span class="alt-font fw-500 text-dark-gray d-block lh-26">World-class Services</span>
+          </div>
+        </div>
+      </div>
+      <!-- end features box item -->
+      <!-- start features box item -->
+      <div class="col icon-with-text-style-08 md-mb-30px text-center text-sm-start">
+        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+          <div class="feature-box-icon me-10px">
+            <i class="bi bi-hourglass icon-very-medium text-base-color"></i>
+          </div>
+          <div class="feature-box-content">
+            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Experience In Strategy</span>
+          </div>
+        </div>
+      </div>
+      <!-- end features box item -->
+      <!-- start features box item -->
+      <div class="col icon-with-text-style-08 xs-mb-30px text-center text-sm-start">
+        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+          <div class="feature-box-icon me-10px">
+            <i class="bi bi-award icon-very-medium text-base-color"></i>
+          </div>
+          <div class="feature-box-content">
+            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Award Winning Company</span>
+          </div>
+        </div>
+      </div>
+      <!-- end features box item -->
+      <!-- start features box item -->
+      <div class="col icon-with-text-style-08 text-center text-sm-start">
+        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+          <div class="feature-box-icon me-10px">
+            <i class="bi bi-shield-lock icon-very-medium text-base-color"></i>
+          </div>
+          <div class="feature-box-content">
+            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Secure Your Business</span>
+          </div>
+        </div>
+      </div>
+      <!-- end features box item -->
+    </div>
+  </div>
+</section>
+<!-- end section -->
+
+<!-- start section -->
+<section class="pb-8 md-pb-17 xs-pb-28">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-xl-5 col-lg-6 col-md-9 md-mb-50px text-center text-lg-start" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <span class="bg-solitude-blue text-uppercase fs-13 ps-25px pe-25px alt-font fw-600 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px">About business</span>
+        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px mb-20px sm-w-85 xs-w-100 mx-auto">
+          Smart & Effective Business Solutions.
+        </h3>
+        <p>
+          Our team is dedicated to delivering high-quality engineering and construction management solutions within the HSEQ sector, including web applications, branding, and marketing. With over 15 years of experience, we are committed to positively impacting our clients through our expertise.
+        </p>
+        <div class="d-flex flex-row justify-content-center justify-content-lg-start align-items-center mt-35px">
+          <div class="w-120px me-25px flex-shrink-0">
+            <div class="chart-percent">
+              <span class="pie-chart-style-01 d-flex align-items-center justify-content-center text-center" data-line-width="7" data-percent="49" data-size="120" data-track-color="#ededed" data-start-color="#aa1e23" data-end-color="#aa1e23">
+                <span class="percent d-flex align-items-center justify-content-center alt-font fs-26 text-dark-gray fw-600 ls-minus-1px"></span>
+              </span>
+            </div>
+          </div>
+          <div class="text-start">
+            <span class="fs-20 lh-28 text-dark-gray alt-font fw-500 d-inline-block w-70 xs-w-100">Increased revenue in the
+              <span class="text-decoration-line-bottom-medium fw-600 text-base-color">last 2 years.</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 md-mb-40px" data-anime='{ "translateY": [0, 0], "zoom": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <figure class="position-relative m-0">
+          <img src="{%static 'assets/images/bsafe/home_page/business_solutions.jpg' %}" alt="" class="w-100 border-radius-5px" />
+          <!-- img size 800*660-->
+
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->
+
+<!-- start section Services -->
+<section class="bg-solitude-blue">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-xl-7 col-lg-9 col-md-10 text-center">
+        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+          Professional & Highly Dedicated Business Services
+        </h3>
+      </div>
+    </div>
+    <div class="row align-items-center" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 150, "staggervalue": 300, "easing": "easeOutQuad" }'>
+      <div class="col-xl-4 col-lg-4 col-md-12 tab-style-05 md-mb-30px sm-mb-20px">
+        <!-- start tab navigation -->
+        <ul class="nav nav-tabs justify-content-center border-0 text-left fw-500 fs-18 alt-font">
+          <li class="nav-item">
+            <a data-bs-toggle="tab" href="#tab_four1" class="nav-link d-flex align-items-center active"><i class="feather icon-feather-briefcase icon-extra-medium text-dark-gray"></i><span>HSEQ Management</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab_four4"><i class="feather icon-feather-user-plus icon-extra-medium text-dark-gray"></i><span>HSE Deployment</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab_four3"><i class="feather icon-feather-activity icon-extra-medium text-dark-gray"></i><span>Construction Management</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab_four2"><i class="feather icon-feather-edit icon-extra-medium text-dark-gray"></i><span>HSE Trainings</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab_four5"><i class="feather icon-feather-home icon-extra-medium text-dark-gray"></i><span>Web Applications</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab_four6"><i class="feather icon-feather-eye icon-extra-medium text-dark-gray"></i><span>Branding & Marketing</span></a>
+          </li>
+        </ul>
+        <!-- end tab navigation -->
+      </div>
+      <div class="col-xl-8 col-lg-8 col-md-12">
+        <div class="tab-content">
+          <!-- start tab 1 content -->
+          <div class="tab-pane fade in active show" id="tab_four1">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-xl-7 sm-mb-30px">
+                <img src="{%static 'assets/images/bsafe/HSEQ/tab_pane_1.jpg' %}" alt="" class="border-radius-6px w-100" />
+                <!-- img size 600*730 -->
+              </div>
+              <div class="col-xl-5 col-md-6  text-center text-md-start">
+                <span class="fs-18 fw-600 text-base-color mb-25px d-flex align-items-center justify-content-center justify-content-md-start"><span
+                    class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-white box-shadow-medium-bottom align-middle me-15px flex-shrink-0"><i class="feather icon-feather-briefcase fs-22"></i></span>HSEQ Management</span>
+                <h5 class="alt-font text-dark-gray mb-20px fw-500 ls-minus-1px">
+                  <span class="fw-600">Systems Establishment</span> or
+                  Implementation
+                </h5>
+                <p>
+                  At BSafe Group, we safeguard our clients' interests and facilitate business growth through meticulous oversight and adherence to legal and contractual requirements while maintaining a secure work environment by mitigating the risk using adequate safety operational controls.
+                </p>
+                <a href="{% url 'home:service_detail' service_type='qhse-management' %}" class="btn btn-large btn-box-shadow btn-rounded btn-base-color mt-10px">Explore now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end tab content -->
+
+          <!-- start tab 2 content -->
+          <div class="tab-pane fade in" id="tab_four2">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-xl-7 sm-mb-30px">
+                <img src="{%static 'assets/images/bsafe/tab_pane_2.jpg' %}" alt="" class="border-radius-6px w-100" />
+              </div>
+              <div class="col-xl-5 col-md-6  text-center text-md-start">
+                <span class="fs-18 fw-600 text-base-color mb-25px d-flex align-items-center justify-content-center justify-content-md-start"><span
+                    class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-white box-shadow-medium-bottom align-middle me-15px flex-shrink-0"><i class="feather icon-feather-edit fs-22"></i></span>HSE Trainings</span>
+                <h5 class="alt-font text-dark-gray mb-20px fw-500 ls-minus-1px">
+                  <span class="fw-600">Live Performance</span> & Safety
+                  Campaigns
+                </h5>
+                <p>
+                  Our training programs are grounded in authentic construction visibility studies. During ongoing projects, we use safety gap analysis, KPIs, and safety behavioural and cultural data to define and address the necessary changes, offering a comprehensive training program to an
+                  international workforce.
+
+                </p>
+                <a href="{% url 'home:service_detail' service_type='hse-training' %}" class="btn btn-large btn-box-shadow btn-rounded btn-base-color mt-10px">Explore now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end tab content -->
+
+          <!-- start tab 3 content -->
+          <div class="tab-pane fade in" id="tab_four3">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-xl-7 sm-mb-30px">
+                <img src="{%static 'assets/images/bsafe/tab_pane_3.jpg' %}" alt="" class="border-radius-6px w-100" />
+              </div>
+              <div class="col-xl-5 col-md-6  text-center text-md-start">
+                <span class="fs-18 fw-600 text-base-color mb-25px d-flex align-items-center justify-content-center justify-content-md-start"><span
+                    class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-white box-shadow-medium-bottom align-middle me-15px flex-shrink-0"><i class="feather icon-feather-activity fs-22"></i></span>Construction Management</span>
+                <h5 class="alt-font text-dark-gray mb-20px fw-500 ls-minus-1px">
+                  <span class="fw-600">Our deployed</span> Workforce
+                </h5>
+                <p>
+                  We will ensure that the implementation and support of our client's HSE management systems requirements are provided at no additional cost and are incorporated into our supervisory contractual terms for our workforce. This will be in accordance with the highest international
+                  standards.
+                </p>
+                <a href="{% url 'home:service_detail' service_type='construction_management' %}" class="btn btn-large btn-box-shadow btn-rounded btn-base-color mt-10px">Explore now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end tab content -->
+
+          <!-- start tab 4 content -->
+          <div class="tab-pane fade in" id="tab_four4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-xl-7 sm-mb-30px">
+                <img src="{%static 'assets/images/bsafe/hse/tab_pane_4.jpg' %}" alt="" class="border-radius-6px w-100" />
+              </div>
+              <div class="col-xl-5 col-md-6  text-center text-md-start">
+                <span class="fs-18 fw-600 text-base-color mb-25px d-flex align-items-center justify-content-center justify-content-md-start"><span
+                    class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-white box-shadow-medium-bottom align-middle me-15px flex-shrink-0"><i class="feather icon-feather-briefcase fs-22"></i></span>HSEQ - HSE - OHS Experts</span>
+                <h5 class="alt-font text-dark-gray mb-20px fw-500 ls-minus-1px">
+                  <span class="fw-600">for Long & Short-Term</span> Supervision
+                </h5>
+                <p>
+                  We are committed to implementing and supporting our client's HSE management systems in accordance with contractual requirements and the specific nature of the deployment. Our highly skilled workforce and HSE personnel will ensure adherence to the most stringent international
+                  standards.
+                </p>
+                <a href="{% url 'home:service_detail' service_type='hse-deployment' %}" class="btn btn-large btn-box-shadow btn-rounded btn-base-color mt-10px">Explore now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end tab content -->
+
+          <!-- start tab 5 content -->
+          <div class="tab-pane fade in" id="tab_four5">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-xl-7 sm-mb-30px">
+                <img src="{%static 'assets/images/bsafe/tab_pane_5.jpg' %}" alt="" class="border-radius-6px w-100" />
+              </div>
+              <div class="col-xl-5 col-md-6  text-center text-md-start">
+                <span class="fs-18 fw-600 text-base-color mb-25px d-flex align-items-center justify-content-center justify-content-md-start"><span
+                    class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-white box-shadow-medium-bottom align-middle me-15px flex-shrink-0"><i class="feather icon-feather-home fs-22"></i></span>Web Applications</span>
+                <h5 class="alt-font text-dark-gray mb-20px fw-500 ls-minus-1px">
+                  <span class="fw-600">Professional and dedicated</span>
+                </h5>
+                <p>
+                  Our services encompass integral internet components with distinct functionalities, facilitating interactive user engagement for task execution, information retrieval, and communication within our client's web platforms and applications. Over the internet, supporting e-commerce,
+                  mobile applications, data management, and IT development. </p>
+                <a href="{% url 'home:service_detail' service_type='website_applications' %}" class="btn btn-large btn-box-shadow btn-rounded btn-base-color mt-10px">Explore now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end tab content -->
+
+          <!-- start tab 6 content -->
+          <div class="tab-pane fade in" id="tab_four6">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-xl-7 sm-mb-30px">
+                <img src="{%static 'assets/images/bsafe/tab_pane_6.jpg' %}" alt="" class="border-radius-6px w-100" />
+              </div>
+              <div class="col-xl-5 col-md-6  text-center text-md-start">
+                <span class="fs-18 fw-600 text-base-color mb-25px d-flex align-items-center justify-content-center justify-content-md-start"><span
+                    class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-white box-shadow-medium-bottom align-middle me-15px flex-shrink-0"><i class="feather icon-feather-eye fs-22"></i></span>Branding & Marketing</span>
+                <h5 class="alt-font text-dark-gray mb-20px fw-500 ls-minus-1px">
+                  <span class="fw-600">Elevate Your Brand with Our Branding</span>
+                </h5>
+                <p>
+                  Our vision is that branding represents the business's identity and involves core values and visual elements. Therefore, we communicate this brand to the target audience, maintaining a competitive edge and executing effective marketing campaigns.
+                </p>
+                <a href="{% url 'home:service_detail' service_type='Marketing_Branding' %}" class="btn btn-large btn-box-shadow btn-rounded btn-base-color mt-10px">Explore now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end tab content -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->
+
+
+
+<!-- start section -->
+<section class="overflow-hidden">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="border-radius-6px w-100 h-950px md-h-450px sm-h-350px d-flex align-items-end justify-content-center overflow-hidden cover-background skrollr-zoom pb-9 xs-pb-12" style="
+            background-image: url('{%static 'assets/images/bsafe/home_page/home_7.jpg' %}');
+          " data-bottom-top="transform:scale(1.2, 1.2) translateY(30px);" data-top-bottom="transform:scale(1, 1) translateY(-30px);">
+          <!-- img size 1920*1100 -->
+          <div class="opacity-medium bg-gradient-dark-transparent"></div>
+          <div class="row justify-content-center">
+            <div class="col-11 col-md-7 position-relative z-index-1 text-center text-lg-start md-mb-35px sm-mb-25px">
+              <h4 class="alt-font text-white mb-0 fw-300 fancy-text-style-4">
+                We make the safety solutions for
+                <span class="fw-600" data-fancy-text='{ "effect": "rotate", "string": ["business!", "problems!", "brands!"] }'></span>
+              </h4>
+            </div>
+            <div class="col-xl-5 col-lg-3 position-relative z-index-1 text-center animation-zoom">
+              <a href="https://www.youtube.com/watch?v=DZaIcutEFe8" class="position-relative d-inline-block text-center border border-2 border-color-transparent-white-very-light rounded-circle video-icon-box video-icon-large popup-youtube">
+                <span>
+                  <span class="video-icon">
+                    <i class="bi bi-play-fill text-white"></i>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->
+
+<!-- start section -->
+
+<!-- end section -->
+
+<!-- start section -->
+<section class="position-relative overflow-hidden sm-pb-20px">
+  <div class="separator-line-9px bg-base-color position-absolute top-0px right-0px" data-bottom-top="width: 15%" data-center-top="width: 50%;"></div>
+  <div class="container">
+    <div class="row justify-content-center mb-2">
+      <div class="col-xl-7 col-lg-9 col-md-10 text-center">
+        <span class="bg-solitude-blue text-uppercase fs-13 ps-25px pe-25px alt-font fw-600 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px"
+          data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>Latest news</span>
+        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+          Stay Updated With The Latest Trends & Business News
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 px-md-0">
+        <ul class="blog-classic blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large"
+          data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+          <li class="grid-sizer"></li>
+          <!-- start blog item -->
+          {% for post in all_posts %}
+          <li class="grid-item">
+            <div class="card bg-transparent border-0 h-100">
+              <div class="blog-image position-relative overflow-hidden border-radius-6px">
+                <a href="{% url 'blog:blog_detail' post.post_Slug %}"><img src="{{ post.image.url }}" alt="{{ post.title }}" /></a>
+                <!-- img size 600*430-->
+              </div>
+              <div class="card-body px-0 pb-30px pt-30px xs-pb-15px">
+                <span class="fs-14 text-uppercase mb-5px d-block"><a href="{% url 'blog:blog_detail' post.post_Slug %}" class="text-dark-gray fw-600 categories-text">{{ post.category.name }}</a><a href="{% url 'blog:blog_detail' post.post_Slug %}" class="blog-date">{{ post.date }}</a></span>
+                <a href="{% url 'blog:blog_detail' post.post_Slug %}" class="card-title mb-0 fw-500 fs-18 lh-30 text-dark-gray d-inline-block">{{ post.title }}</a>
+              </div>
+            </div>
+          </li>
+
+          {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->
+<section class="pt-0">
+  <div class="container">
+    <div class="row position-relative clients-style-08 mt-25px" data-anime='{ "opacity": [0,1], "duration": 600, "delay":200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+      <div class="col swiper text-center feather-shadow"
+        data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "speed": 3000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false}, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 5 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }'>
+        <div class="swiper-wrapper marquee-slide">
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/equans.png" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/aether.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/parsons-logo.jpeg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/arabtec-logo.png" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/tecnimont.png" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/bortalis.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/north25-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/dp-logo.jpeg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/coengr-logo.jpeg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/DEC-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/altorath-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/Musanada-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/Bloom-logo.jpg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/CPM-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/ADAC-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/miral-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/elm-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/alhusam-group-logo.jpg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+
+          <!-- end client item -->
+
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/BESIX-logo.webp" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/aecom-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- start section -->
+<section class="bg-dark-slate-blue pt-4 pb-4 lg-pt-6 lg-pb-6" data-parallax-background-ratio="0.5" style="background-image: url({%static 'assets/images/bsafe/banar_bottom.jpg' %})"
+  data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+  <div class="opacity-medium bg-dark-slate-blue"></div>
+  <div class="container z-index-1 position-relative">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 text-center">
+        <h4 class="alt-font text-white mb-0 fw-300 fancy-text-style-4">
+          ADDING SUCCESS, ONE
+          <span class="fw-600" data-fancy-text='{ "effect": "wave", "direction": "down", "string": ["PROJECT!", "BUSINESS!", "PROBLEM!"], "duration": 3500 }'></span>
+          AT A TIME
+        </h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->
+
+{% endblock content %}

@@ -1,0 +1,90 @@
+{% load static %}
+<header>
+    <!-- start navigation -->
+    <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="light">
+        <div class="container">
+            <div class="col-2  me-lg-0 me-auto">
+                <a class="navbar-brand w-100 " href="{% url 'home:home' %}">
+                    <img src="{% static 'assets/images/bsafe/bsafe_logo.png'%}" data-at2x="{% static 'assets/images/bsafe/bsafe_logo.png'%}" />
+
+                </a>
+            </div>
+            <div class="col-auto menu-order position-static">
+                <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Bug in mobile nav bar the close btn doesnt work and the servcies dropdown also fix after release-->
+                    <ul class="navbar-nav alt-font">
+                        <!-- <li class="nav-item">
+              <a href="{% url 'home:home' %}" class="nav-link">Home</a>
+            </li> -->
+                        <li class="nav-item">
+                            <a href="{% url 'home:home' %}" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'home:about' %}" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-with-icon-style02">
+                            <a href="{%url 'home:services' %}" class="nav-link">Services</a>
+                            <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a href="{% url 'home:service_detail' service_type='qhse-management' %}"><i class="bi bi-briefcase"></i>HSEQ Management</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home:service_detail' service_type='hse-deployment' %}"><i class="bi bi-activity"></i> HSE Deployment</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home:service_detail' service_type='construction_management' %}"><i class="bi bi-person-plus"></i>Construction Management</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home:service_detail' service_type='hse-training' %}"><i class="feather icon-feather-edit"></i>HSE Trainings</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home:service_detail' service_type='website_applications' %}"><i class="bi bi-window-fullscreen"></i>Web Applications</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home:service_detail' service_type='Marketing_Branding' %}"><i class="bi bi-brush"></i>Branding & Marketing</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">XProjects</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="{% url 'home:clients' %}" class="nav-link">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'blog:blog' %}" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'home:faq' %}" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'contact:contact' %}" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4 text-end d-none d-sm-flex">
+                <div class="header-icon">
+                    <div class="d-none d-xxl-inline-block me-0">
+                        <div class="alt-font fs-40 xl-fs-13 widget-text fw-500">
+                            <span class="w-35px h-35px  d-inline-block lh-36 me-10px border-radius-100px"><a href="https://wa.me/32487419847" class="widget-text text-dark-hover"><i class="fa-brands fa-whatsapp me-10px"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="header-button">
+                        <button type="button" id="bookBtn" href="" class="btn btn-small bg-base-color text-white btn-rounded" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-url="{% url 'booking:book_appointment' %}">
+                            Where to start
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
+</header>

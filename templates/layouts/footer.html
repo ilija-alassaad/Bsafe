@@ -1,0 +1,107 @@
+{% load static %}
+<footer class="pt-5 pb-5 sm-pt-40px sm-pb-45px footer-dark bg-extra-medium-slate-blue">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- start footer column -->
+            <div class="col-lg-3 col-sm-6 last-paragraph-no-margin order-5 order-sm-4 order-lg-1 text-center text-sm-start">
+                <a href="{% url 'home:home' %}" class="footer-logo mb-15px d-block d-lg-inline-block"><img src="{% static 'assets/images/bsafe/bsafe_logo.png'%}" /></a>
+
+                <p>
+                    &COPY; 2024
+                    <a href="{% url 'home:home' %}" target="_blank" class="text-white text-decoration-line-bottom">Powered By Our Team</a>
+                </p>
+            </div>
+            <!-- end footer column -->
+            <!-- start footer column -->
+            <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-1 order-lg-2">
+                <span class="alt-font d-block text-white mb-5px">Company</span>
+                <ul>
+                    <li><a href="{% url 'home:about' %}">About us</a></li>
+                    <li><a href="{% url 'home:services' %}">Our services</a></li>
+                    <li><a href="{% url 'home:clients' %}">Our clients</a></li>
+                    <li><a href="{% url 'contact:contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            <!-- end footer column -->
+            <!-- start footer column -->
+            <div class="col-7 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-2 order-lg-3 px-lg-2">
+                <span class="alt-font d-block text-white mb-5px">Services</span>
+                <ul>
+                    <li>
+                        <a href="{% url 'home:service_detail' service_type='qhse-management' %}">HSEQ Management</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home:service_detail' service_type='hse-training' %}">HSE Training</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home:service_detail' service_type='hse-deployment' %}">HSE Deployment</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home:service_detail' service_type='construction_management' %}">Construction Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home:service_detail' service_type='website_applications' %}">Web Applications</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home:service_detail' service_type='Marketing_Branding' %}">
+                            Design Renovation
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end footer column -->
+            <!-- start footer column -->
+            <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-3 order-lg-4">
+                <span class="alt-font d-block text-white mb-5px">Social connect</span>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Vrasenestraat+29,+9100+Sint-Niklaas/@51.1948024,4.1771513,17z/data=!3m1!4b1!4m6!3m5!1s0x47c38bf3e46a2523:0xd397e3f2213308f7!8m2!3d51.1948024!4d4.1797262!16s%2Fg%2F11cs7v739h?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">Google Maps</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/bsafegroup/" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/98545009" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCEQGp-C3C1ocodfSstzC13g" target="_blank">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/bsafegroup/" target="_blank">Instagram</a>
+                    </li>
+                    <li><a href="https://x.com/BsafeintlEU" target="_blank">X</a></li>
+                </ul>
+            </div>
+            <!-- end footer column -->
+            <!-- start footer column -->
+            <div class="col-7 col-lg-3 col-sm-6 xs-mb-30px last-paragraph-no-margin order-4 order-sm-5 order-lg-5">
+                <span class="alt-font d-block text-white mb-5px">Get in touch</span>
+                <p class="w-80 lg-w-100 md-w-70 sm-w-100 mb-10px">
+                    Our regional service area is currently expanding.
+                </p>
+                <div>
+                    <i class="feather icon-feather-phone-call icon-very-small text-white me-10px"></i><a href="tel:+32 470982341" class="text-white">+32 470 98 23 41</a>
+                </div>
+                <div>
+                    <i class="feather icon-feather-phone-call icon-very-small text-white me-10px"></i><a href="tel:+32487419847" class="text-white">+32 487 41 98 47</a>
+                </div>
+                <div>
+                    <i class="feather icon-feather-phone-call icon-very-small text-white me-10px"></i><a href="tel:+37125581091" class="text-white">+371 25 58 10 91</a>
+                </div>
+                <div>
+                    <i class="feather icon-feather-phone-call icon-very-small text-white me-10px"></i><a href="tel:+31645300279" class="text-white">+31 645 30 02 79</a>
+                </div>
+                <div>
+                    <i class="feather icon-feather-phone-call icon-very-small text-white me-10px"></i><a href="tel:+661516066" class="text-white">+34 661 51 60 66</a>
+                </div>
+                <div>
+                    <i class="feather icon-feather-mail icon-very-small text-white me-10px"></i><a href="mailto:support@bsafegroup.eu" class="text-white text-decoration-line-bottom">support@bsafegroup.eu</a>
+                </div>
+
+            </div>
+            <!-- end footer column -->
+        </div>
+    </div>
+</footer>
