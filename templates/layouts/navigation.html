@@ -1,6 +1,6 @@
 {% load static %}
-<header>
-    <!-- start navigation -->
+<!-- <header>
+ 
     <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="light">
         <div class="container">
             <div class="col-2  me-lg-0 me-auto">
@@ -17,11 +17,8 @@
                     <span class="navbar-toggler-line"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Bug in mobile nav bar the close btn doesnt work and the servcies dropdown also fix after release-->
                     <ul class="navbar-nav alt-font">
-                        <!-- <li class="nav-item">
-              <a href="{% url 'home:home' %}" class="nav-link">Home</a>
-            </li> -->
+              
                         <li class="nav-item">
                             <a href="{% url 'home:home' %}" class="nav-link">Home</a>
                         </li>
@@ -50,11 +47,12 @@
                                 <li>
                                     <a href="{% url 'home:service_detail' service_type='Marketing_Branding' %}"><i class="bi bi-brush"></i>Branding & Marketing</a>
                                 </li>
+                                <li>
+                                    <a href="{% url 'home:service_detail' service_type='Thesis_Guidance' %}"><i class="bi bi-journal-bookmark"></i>Thesis & Guidance</a>
+                                </li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a href="#" class="nav-link">XProjects</a>
-                        </li> -->
+                     
                         <li class="nav-item">
                             <a href="{% url 'home:clients' %}" class="nav-link">Clients</a>
                         </li>
@@ -86,5 +84,106 @@
             </div>
         </div>
     </nav>
+ 
+</header> -->
+
+<header>
+    <!-- start navigation -->
+    <nav class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed" data-header-hover="dark">
+        <div class="container-fluid">
+            <div class="col-auto col-lg-6 me-lg-0 me-auto d-none d-lg-flex">
+                <div class="header-icon">
+                    <div class="header-social-icon icon">
+                        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f text-white-linear"></i></a>
+                        <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram text-white-linear"></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-linkedin text-white-linear"></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-youtube text-white-linear"></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-Instagram text-white-linear"></i></a>
+                        <a class="ps-0" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-x text-white-linear "></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-tiktok text-white-linear "></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-pinterest text-white-linear "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <a class="navbar-brand" href="demo-horizontal-portfolio.html">
+                    <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="default-logo">
+                    <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="alt-logo">
+                    <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="mobile-logo">
+                </a>
+            </div>
+            <div class="col-auto col-lg-6 text-end">
+
+                <div class="header-icon header-push-button d-flex hamburger-push-button icon">
+                    <div class="header-button me-15px">
+                        <button type="button" id="bookBtn" href="" class="btn btn-small bg-base-color text-white btn-rounded" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-url="{% url 'booking:book_appointment' %}">
+                            Where to start
+                        </button>
+                    </div>
+                    <div class="push-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- end navigation -->
+    <!-- start hamburger menu -->
+    <div class="push-menu hamburger-nav header-dark hamburger-menu-simple bg-black" style="background-image: url(images/vertical-line-bg-small-light-gray.svg)">
+        <span class="close-menu text-dark-gray bg-white fs-18"><i class="fa-solid fa-xmark"></i></span>
+        <div class="d-flex flex-column align-items-center justify-content-center h-100 p-5 lg-p-7 sm-px-0">
+            <a class="hamburger-logo" href="demo-horizontal-portfolio.html">
+                <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="">
+            </a>
+            <div class="row align-items-center justify-content-center">
+                <div class="hamburger-menu menu-list-wrapper col-lg-5 lg-no-margin offset-lg-1" data-scroll-options='{ "theme": "light" }'>
+                    <ul class="menu-item-list fw-500 alt-font text-center text-lg-start">
+                        <li class="menu-item"><a href="demo-horizontal-portfolio.html" class="nav-link">home</a></li>
+                        <li class="menu-item"><a href="demo-horizontal-portfolio-about.html" class="nav-link">about</a></li>
+                        <li class="menu-item"><a href="demo-horizontal-portfolio-services.html" class="nav-link">services</a></li>
+                        <li class="menu-item"><a href="demo-horizontal-portfolio-work.html" class="nav-link">work</a></li>
+                        <li class="menu-item"><a href="demo-horizontal-portfolio-contact.html" class="nav-link">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-4 d-none d-lg-inline-block offset-xl-3 offset-lg-2">
+                    <div class="row menu-address">
+                        <div class="col-12 mb-40px">
+                            <span class="text-white fw-500 mb-5px d-block">Quick contact</span>
+                            <div class="d-block">
+                                <span>Phone:</span> <a href="tel:12345678910">+1 234 567 8910</a>
+                            </div>
+                            <div class="d-block">
+                                <span>Email:</span> <a href="mailto:info@domain.com">info@domain.com</a>
+                            </div>
+                        </div>
+                        <div class="col-12 last-paragraph-no-margin mb-40px">
+                            <span class="text-white fw-500 mb-5px d-block">Contact address</span>
+                            <p>701 Sondanella, 18th floor,<br>
+                                Gunsberg, Switzerland</p>
+                        </div>
+                        <div class="col-12 elements-social social-icon-style-10">
+                            <ul class="light">
+                                <li class="me-15px">
+                                    <a class="facebook" href="https://www.facebook.com/" target="_blank">Fb.</a>
+                                </li>
+                                <li class="me-15px">
+                                    <a class="instagram" href="https://www.instagram.com/" target="_blank">Ig.</a>
+                                </li>
+                                <li class="me-15px">
+                                    <a class="twitter" href="http://www.twitter.com" target="_blank">Tw.</a>
+                                </li>
+                                <li>
+                                    <a class="behance" href="https://www.behance.net/" target="_blank">Be.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hamburger menu -->
 </header>

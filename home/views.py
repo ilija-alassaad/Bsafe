@@ -67,7 +67,8 @@ class ServicesDetails(View):
             'hse-deployment': 'services-deployment.html',
             'construction_management': 'construction_management.html',
             'website_applications': 'website_applications.html',
-            'Marketing_Branding': 'Marketing_Branding.html'
+            'Marketing_Branding': 'Marketing_Branding.html',
+            'Thesis_Guidance': 'thesis_guidance.html',
         }
         template = service_template.get(service_type)
 
