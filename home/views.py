@@ -24,31 +24,6 @@ def clients(request):
     return render(request, f'home/clients.html', {'pages': pages})
 
 
-def HSEQ(request):
-    pages = Page.objects.all()
-    return render(request, f'services_details/HSEQ_starts.html', {'pages': pages})
-
-
-def HSEQ(request):
-    pages = Page.objects.all()
-    return render(request, f'services_details/HSEQ_starts.html', {'pages': pages})
-
-
-def HSEQ(request):
-    pages = Page.objects.all()
-    return render(request, f'services_details/HSEQ_starts.html', {'pages': pages})
-
-
-def HSEQ(request):
-    pages = Page.objects.all()
-    return render(request, f'services_details/HSEQ_starts.html', {'pages': pages})
-
-
-def HSEQ(request):
-    pages = Page.objects.all()
-    return render(request, f'services_details/HSEQ_starts.html', {'pages': pages})
-
-
 def services(request):
     pages = Page.objects.all()
     return render(request, f'home/services.html', {'pages': pages})
@@ -62,13 +37,14 @@ def faq(request):
 class ServicesDetails(View):
     def get(self, request, service_type):
         service_template = {
-            'qhse-management': 'services-qhse.html',
-            'hse-training': 'services-trainings.html',
-            'hse-deployment': 'services-deployment.html',
+            'HSEQ_management': 'HSEQ_management.html',
+            'HSE_deployment': 'HSE_deployment.html',
+            'HSE_Field_Trainings': 'HSE_Field_Trainings.html',
             'construction_management': 'construction_management.html',
             'website_applications': 'website_applications.html',
             'Marketing_Branding': 'Marketing_Branding.html',
             'Thesis_Guidance': 'thesis_guidance.html',
+            'Import_Export': 'import_export.html',
         }
         template = service_template.get(service_type)
 
