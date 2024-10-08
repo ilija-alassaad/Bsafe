@@ -227,7 +227,7 @@ footer ul li {
 }
 
 
-.text-white-linear span {
+.text-white-linear a {
     background: #FFFFFF;
     background: linear-gradient(to right, #c79834, #d5b35e, #fff, #d5b35e, #c79834);
     -webkit-background-clip: text;
