@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from django.contrib import messages
 from .models import MessagesList
 
@@ -21,8 +22,7 @@ def contact(request):
         )
         new_message.save()
 
-        # Send a success message and redirect to home
-        messages.success(request, 'Your message has been sent successfully.')
-        return redirect('home:home')
+        # Send a success message in JSON response
+        return JsonResponse({'success': True, 'message': 'Your message has been sent successfully.'})
 
     return render(request, 'contact/contact.html')

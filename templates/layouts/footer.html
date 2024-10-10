@@ -1,6 +1,6 @@
 {% load static %}
 <footer class="pt-5 pb-5 sm-pt-40px sm-pb-45px footer-dark bg-extra-medium-slate-blue">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <!-- start footer column -->
             <div class="col-lg-3 col-sm-6 last-paragraph-no-margin order-5 order-sm-4 order-lg-1 text-center text-sm-start">
@@ -13,7 +13,7 @@
             </div>
             <!-- end footer column -->
             <!-- start footer column -->
-            <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-1 order-lg-2">
+            <div class="col-4 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-1 order-lg-2">
                 <span class="alt-font d-block text-white mb-5px">Company</span>
                 <ul>
                     <li><a href="{% url 'home:about' %}">About us</a></li>
@@ -31,10 +31,10 @@
                         <a href="{% url 'home:service_detail' service_type='HSEQ_management' %}">HSEQ Management</a>
                     </li>
                     <li>
-                        <a href="{% url 'home:service_detail' service_type='HSE_Field_Trainings' %}">HSE Training</a>
+                        <a href="{% url 'home:service_detail' service_type='HSE_deployment' %}">HSE Deployment</a>
                     </li>
                     <li>
-                        <a href="{% url 'home:service_detail' service_type='HSE_deployment' %}">HSE Deployment</a>
+                        <a href="{% url 'home:service_detail' service_type='HSE_Field_Trainings' %}">HSE Field Trainings</a>
                     </li>
                     <li>
                         <a href="{% url 'home:service_detail' service_type='construction_management' %}">Construction Management
@@ -48,6 +48,8 @@
                             Design Renovation
                         </a>
                     </li>
+                    <li><a href="{% url 'home:service_detail' service_type='Thesis_Guidance' %}">Thesis Guidance</a></li>
+                    <li><a href="{% url 'home:service_detail' service_type='Import_Export' %}">Import & Export</a></li>
                 </ul>
             </div>
             <!-- end footer column -->
@@ -72,6 +74,8 @@
                         <a href="https://www.instagram.com/bsafegroup/" target="_blank">Instagram</a>
                     </li>
                     <li><a href="https://x.com/BsafeintlEU" target="_blank">X</a></li>
+                    <li><a href="https://www.tiktok.com/@bsafegroup" target="_blank">Tiktok</a></li>
+                    <li><a href="https://www.pinterest.com/bsafegroupbe/" target="_blank">Pinterest</a></li>
                 </ul>
             </div>
             <!-- end footer column -->

@@ -76,20 +76,14 @@
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1">
-        {% if messages %} {% for message in messages %}
 
-        <div id="message" class="mt-30 alert align-middle alert-{{message.tags}}">
-          <span class="align-middle"> {{message}}</span>
-        </div>
-
-        {% endfor %} {% endif %}
         <div class="pt-5 md-pt-45px contact-form-style-01" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
           <h6 class="d-inline-block alt-font fw-600 text-dark-gray ls-minus-1px mb-30px">
             Reach To Us & Let's Grow Together
 
           </h6>
           <!-- start contact form -->
-          <form method="POST" action="{% url 'contact:contact' %}">
+          <form id="contact-form" method="POST" action="{% url 'contact:contact' %}">
             {% csrf_token %}
             <div class="position-relative form-group mb-20px">
               <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
@@ -118,6 +112,13 @@
 
           <!-- end contact form -->
         </div>
+        {% if messages %} {% for message in messages %}
+
+        <div id="message" class="mt-30 alert align-middle alert-{{message.tags}}">
+          <span class="align-middle"> {{message}}</span>
+        </div>
+
+        {% endfor %} {% endif %}
       </div>
     </div>
   </div>
@@ -142,5 +143,59 @@
     </section>
 -->
 <!-- end section -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault();  // Prevent the default form submission
+
+    const formData = new FormData(this);
+
+    fetch("{% url 'contact:contact' %}", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest',  // To identify an AJAX request in Django
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          // Display SweetAlert toast notification
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener("mouseenter", Swal.stopTimer);
+              toast.addEventListener("mouseleave", Swal.resumeTimer);
+            }
+          });
+
+          Toast.fire({
+            icon: "success",
+            title: data.message
+          });
+
+          // Clear the form fields
+          document.getElementById("contact-form").reset();
+        } else {
+          // Handle errors (if any)
+          Toast.fire({
+            icon: "error",
+            title: "Failed to send the message. Please try again."
+          });
+        }
+      })
+      .catch(error => {
+        console.error("Error:", error);
+        Toast.fire({
+          icon: "error",
+          title: "An unexpected error occurred."
+        });
+      });
+  });
+</script>
 {%endblock content%}
