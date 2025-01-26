@@ -3,28 +3,50 @@
 <header>
 
     <nav class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed" data-header-hover="dark">
-        <div class="container-fluid">
-            <div class="col-lg-6 col-3 me-lg-0 me-auto d-flex d-lg-flex">
-                <!--<div class="header-icon">
-                    <div class="header-social-icon icon">
-                        <a href="https://www.facebook.com/profile.php?id=61566862343062" target="_blank"><i class="fa-brands  fa-facebook-f sm-fs-15 text-white-linear"></i></a>
-                        <a href="https://www.linkedin.com/company/www-bsafegroup-eu/posts/?feedView=all" target="_blank"><i class="fa-brands fa-linkedin sm-fs-15 text-white-linear"></i></a>
-                        <a href="https://www.youtube.com/@BSafeGroup" target="_blank"><i class="fa-brands fa-youtube sm-fs-15 text-white-linear"></i></a>
-                        <a href="https://www.instagram.com/bsafegroup.be/" target="_blank"><i class="fa-brands fa-instagram sm-fs-15 text-white-linear"></i></a>
-                        <a href="https://x.com/bsafegroup2022" target="_blank"><i class="fa-brands sm-fs-15 fa-x text-white-linear "></i></a>
-                        <a href="https://www.tiktok.com/@bsafegroup" target="_blank"><i class="fa-brands sm-fs-15 fa-tiktok text-white-linear "></i></a>
-                       
-                    </div>
-                </div>-->
-            </div>
-            <div class="col-auto">
-                <a class="navbar-brand" href="demo-horizontal-portfolio.html">
+        <div class="container-fluid pt-1">
+            
+            <div class="col-lg-10 col-5  d-flex d-lg-flex pt-1">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2"  href="{% url 'home:service_detail' service_type='HSEQ_management' %}">HSEQ Management</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2"  href="{% url 'home:service_detail' service_type='HSE_deployment' %}">HSE Deployment</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2"  href="{% url 'home:service_detail' service_type='HSE_Field_Trainings' %}">HSE Field Trainings</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2"  href="{% url 'home:service_detail' service_type='construction_management' %}">Construction Supervision</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2"  href="{% url 'home:service_detail' service_type='website_applications' %}">Web Applications</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2"  href="{% url 'home:service_detail' service_type='Marketing_Branding' %}">Branding & Marketing</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2"  href="{% url 'home:service_detail' service_type='Thesis_Guidance' %}">Thesis Guidance</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2"  href="{% url 'home:service_detail' service_type='Import_Export' %}">Import & Export</a>
+                    </li>
+                </ul>
+                
+                <!-- <a class="navbar-brand" href="demo-horizontal-portfolio.html">
                     <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="default-logo">
                     <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="alt-logo">
                     <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="mobile-logo">
-                </a>
+                </a> -->
             </div>
-            <div class="col-auto col-lg-6 text-end">
+            <div class="col-auto  text-end">
 
                 <div class="header-icon header-push-button d-flex hamburger-push-button icon">
                     <div class="header-button me-15px">
