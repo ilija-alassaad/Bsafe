@@ -23,6 +23,10 @@ def clients(request):
     pages = Page.objects.all()
     return render(request, f'home/clients.html', {'pages': pages})
 
+def career(request):
+    pages = Page.objects.all()
+    return render(request, f'home/careers.html', {'pages': pages})
+
 
 def services(request):
     pages = Page.objects.all()
