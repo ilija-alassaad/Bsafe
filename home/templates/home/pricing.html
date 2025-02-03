@@ -1,15 +1,14 @@
-﻿{% extends "base.html" %} {% load static %} {% block content %}
+﻿{% extends "base.html" %} {% load static%} {% block content %}
 <!-- start page title -->
-<section class="page-title-big-typography bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5" style="
-    background-image: url('/static/assets/images/bsafe/pricing-banner.jpg');
-  ">
-  <!-- img size 1920*1100-->
+<section class="page-title-big-typography h-500px  md-h-450px sm-h-350px   bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5" style="background-image: url('{%static 'assets/images/bsafe/about.jpg' %}'); background-size: auto !important;">
+  <!-- img size 1920*1100 -->
   <div class="opacity-extra-medium bg-dark-slate-blue"></div>
-  <div class="container">
+  <div class="container sm-h-350px">
     <div class="row align-items-center justify-content-center extra-small-screen">
       <div class="col-12 position-relative text-center page-title-extra-large">
+
         <h1 class="m-auto text-white text-shadow-double-large fw-500 ls-minus-3px xs-ls-minus-2px" data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-          Pricing - business
+          Collaborating For Mutual Growth
         </h1>
       </div>
       <div class="down-section text-center" data-anime='{ "translateY": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -27,327 +26,1226 @@
 <!-- start section -->
 <section id="down-section">
   <div class="container">
-    <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-4 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "translateY": [50, 0], "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-      <!-- start features box item -->
-      <div class="col icon-with-text-style-09 md-mb-50px">
-        <div class="feature-box">
-          <div class="feature-box-icon feature-box-icon-rounded dark-hover box-shadow-medium-bottom w-110px h-110px rounded-circle mb-25px">
-            <i class="line-icon-Shield icon-large text-base-color"></i>
-            <div class="feature-box-icon-hover bg-base-color rounded-circle"></div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-5 col-md-10 position-relative z-index-1 md-mb-40px">
+        <div class="atropos" data-atropos>
+          <div class="atropos-scale" data-anime='{ "translate": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+            <div class="atropos-rotate">
+              <div class="atropos-inner">
+                <div data-atropos-offset="3">
+                  <img src="{%static 'assets/images/bsafe/about_us.jpg' %}" class="border-radius-6px w-100" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="feature-box-content last-paragraph-no-margin">
-            <span class="d-inline-block alt-font fw-500 text-dark-gray mb-5px fs-18">Secure payments</span>
-            <p class="w-90 sm-w-100 xs-w-80 m-auto">
-              Lorem ipsum simply dummy text printing typesetting.
+        </div>
+        <div class="absolute-middle-right md-absolute-middle-center right-minus-45px md-right-auto d-inline-block text-center z-index-9">
+          <a href="https://www.youtube.com/@BsafeInternational" class="bg-white box-shadow-extra-large rounded-circle video-icon-box video-icon-extra-large popup-youtube d-inline-block"
+            data-anime='{ "translate": [0, 0], "scale": [0,1], "duration": 1000, "delay": 300, "staggervalue": 300, "easing": "easeOutBack" }'>
+            <span>
+              <span class="video-icon bg-white">
+                <i class="fa-solid fa-play text-base-color"></i>
+                <span class="video-icon-sonar">
+                  <span class="video-icon-sonar-bfr bg-base-color opacity-9"></span>
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-6 offset-lg-1 col-md-9 ps-6 text-center text-lg-start lg-ps-15px" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <span class="bg-solitude-blue text-uppercase fs-13 ps-25px pe-25px alt-font fw-600 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px">About company</span>
+        <h3 class="fw-600 text-dark-gray ls-minus-2px alt-font sm-w-80 xs-w-100 mx-auto sm-mb-20px">
+          BSAFE GROUP
+        </h3>
+        <p>
+          BSafe Group specializes in helping international clients with HSEQ & construction management. We offer web applications, branding, marketing guidance, import, & export services, focusing on following international regulations. Our goal is to make transactions smooth, minimize delays,
+          & optimize costs for our customers. With BSafe Group, you can trust that your global trade operations will be handled efficiently & professionally, allowing you to focus on growing your business in new markets.
+        </p>
+
+        <a href="{% url 'home:home' %}#down-section" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded mt-15px sm-mt-10px">Our services<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center mt-7 ps-5 sm-mt-35px lg-ps-0 pe-5 lg-pe-0">
+      <div class="col-md-6 col-sm-8 md-mb-35px">
+        <div class="row align-items-center justify-content-center" data-anime='{ "translateY":[0, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+          <div class="col-auto">
+            <span class="alt-font text-dark-gray fw-600 fs-130 lg-fs-110 ls-minus-7px">15</span>
+          </div>
+          <div class="col-5 col-xl-4 col-lg-5 col-sm-6">
+            <h6 class="fw-500 text-dark-gray alt-font m-0 ls-minus-1px">
+              Years Experience
+            </h6>
+          </div>
+          <div class="col-3 col-xl-3 col-md-2 text-center d-none d-lg-inline-block">
+            <span class="fw-400 fs-110 text-base-color position-relative top-minus-10px">|</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-10 overflow-hidden">
+        <div class="row align-items-center" data-anime='{ "el": "childs", "translateY":[0, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 100, "easing": "easeOutQuad" }'>
+          <div class="col-sm-6 last-paragraph-no-margin text-center xs-mb-35px">
+            <h2 class="fw-700 text-dark-gray mb-5px alt-font">140M+</h2>
+            <span class="fs-18 alt-font ls-minus-05px fw-500 text-dark-gray">Working man-hours</span>
+            <p class="lh-24">With Zero LTI</p>
+          </div>
+          <div class="col-sm-6 last-paragraph-no-margin text-center">
+            <h2 class="fw-700 text-dark-gray mb-5px alt-font">11</h2>
+            <span class="fs-18 alt-font ls-minus-05px fw-500 text-dark-gray">International Awards</span>
+            <p class="lh-24">Project & HSEQ Management</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->
+<section>
+  <div class="container">
+    <div class="row  justify-content-center">
+      <div class="col-xl-5 col-lg-6 md-mb-50px text-center text-lg-start" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <span class="bg-solitude-blue text-uppercase fs-13 ps-25px pe-25px alt-font fw-600 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px"></span>
+        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px">What Our Services Can Bring To Businesses</h3>
+
+
+      </div>
+      <div class="col-xl-5 col-lg-6 offset-xl-2 position-relative">
+        <div class="accordion pricing-table-style-04" id="accordion-style-01" data-active-icon="fa-angle-up" data-inactive-icon="fa-angle-down" data-anime='{"el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+          <!-- start accordion item -->
+          <div class="accordion-item bg-white active-accordion box-shadow-quadruple-large mb-20px">
+            <div class="accordion-header">
+              <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-01" aria-expanded="true" data-bs-parent="#accordion-style-01">
+                <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">HSEQ & Agile In Construction Management:<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-up"></i></span></div>
+              </a>
+            </div>
+            <div id="accordion-style-01-01" class="accordion-collapse collapse show" data-bs-parent="#accordion-style-01">
+              <div class="accordion-body last-paragraph-no-margin">
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Construction Visibility Studies
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Risk Management & MSRA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Training Program Development</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Audits & Inspections & NCRs</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Accident Investigation & Lesson Learned</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">SMART Objectives</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Utilising Skilled Manpower</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-with-text-style-08">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Pre-qualifications & Evaluations</span>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <!-- end accordion item -->
+          <!-- start accordion item -->
+          <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
+            <div class="accordion-header">
+              <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
+                <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">IT engineering & Web applications:<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
+              </a>
+            </div>
+            <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01">
+              <div class="accordion-body last-paragraph-no-margin">
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Web Development
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Mobile Application</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">E-commerce Implementation</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">IT Solutions</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Data keeping</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Maintenance Services</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+
+              </div>
+            </div>
+          </div>
+          <!-- end accordion item -->
+          <!-- start accordion item -->
+          <div class="accordion-item bg-white box-shadow-quadruple-large">
+            <div class="accordion-header">
+              <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-03" aria-expanded="false" data-bs-parent="#accordion-style-01">
+                <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Branding & Marketing:<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
+              </a>
+            </div>
+            <div id="accordion-style-01-03" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01">
+              <div class="accordion-body last-paragraph-no-margin">
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Logo Design
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Packaging Design</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Posters</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Logo Animation</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Video Animation</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-10px">
+                  <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-solitude-blue rounded-circle me-10px">
+                      <i class="fa-solid fa-check fs-14 text-base-color"></i>
+                    </div>
+                    <div class="feature-box-content">
+                      <span class="text-dark-gray">Invitations</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end accordion item -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- start section -->
+<section class="bg-solitude-blue">
+  <div class="container">
+    <div class="row justify-content-center mb-3">
+      <div class="col-xl-5 col-lg-6 col-sm-8 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <span class="bg-white text-uppercase fs-13 ps-25px pe-25px alt-font fw-600 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px">Process cycle</span>
+        <h3 class="alt-font text-dark-gray fw-600 ls-minus-2px">
+          Projects Portfolio BSafe Supervision
+        </h3>
+      </div>
+    </div>
+    <div class="row justify-content-center" data-anime='{ "el": "childs", "perspective": [1200,1200], "translateY": [30, 0], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+      <!-- start fancy text box item -->
+      <div class="col-lg-6 col-md-8 fancy-text-box-style-02 mb-30px">
+        <div class="feature-box feature-box-left-icon-middle h-100 bg-white hover-box dark-hover border-radius-6px ps-4 pe-4 pt-9 pb-9 box-shadow-extra-large box-shadow-extra-large-hover overflow-hidden">
+          <div class="feature-box-icon ms-40px me-40px lg-ms-15px lg-me-15px">
+            <h2 class="alt-font text-dark-gray fw-700 ls-minus-1px mb-0">
+              2010
+            </h2>
+          </div>
+          <div class="feature-box-content border-start border-color-extra-medium-gray ps-30px pe-40px lg-ps-15px lg-pe-15px last-paragraph-no-margin">
+            <span class="text-dark-gray fw-500 fs-20 xs-fs-18 alt-font ls-minus-05px">HSEQ Network Founded</span>
+            <p class="text-light-opacity">Globally (Worldwide HSEQ Professionals)</p>
+          </div>
+          <div class="feature-box-overlay bg-base-color"></div>
+        </div>
+      </div>
+      <!-- end fancy text box item -->
+
+      <!-- start fancy text box item -->
+      <div class="col-lg-6 col-md-8 fancy-text-box-style-02 mb-30px">
+        <div class="feature-box feature-box-left-icon-middle h-100 bg-white hover-box dark-hover border-radius-6px ps-4 pe-4 pt-9 pb-9 box-shadow-extra-large box-shadow-extra-large-hover overflow-hidden">
+          <div class="feature-box-icon ms-40px me-40px lg-ms-15px lg-me-15px">
+            <h2 class="alt-font text-dark-gray fw-700 ls-minus-1px mb-0">
+              2016
+            </h2>
+          </div>
+          <div class="feature-box-content border-start border-color-extra-medium-gray ps-30px pe-40px lg-ps-15px lg-pe-15px last-paragraph-no-margin">
+            <span class="text-dark-gray fw-500 fs-20 xs-fs-18 alt-font ls-minus-05px">
+              Improved QHSE
+            </span>
+            <p class="text-light-opacity">Systems In Construction.</p>
+          </div>
+          <div class="feature-box-overlay bg-base-color"></div>
+        </div>
+      </div>
+      <!-- end fancy text box item -->
+      <!-- start fancy text box item -->
+      <div class="col-lg-6 col-md-8 fancy-text-box-style-02  mb-30px">
+        <div class="feature-box feature-box-left-icon-middle h-100 bg-white hover-box dark-hover border-radius-6px ps-4 pe-4 pt-9 pb-9 box-shadow-extra-large box-shadow-extra-large-hover overflow-hidden">
+          <div class="feature-box-icon ms-40px me-40px lg-ms-15px lg-me-15px">
+            <h2 class="alt-font text-dark-gray fw-700 ls-minus-1px mb-0">
+              2020
+            </h2>
+          </div>
+          <div class="feature-box-content border-start border-color-extra-medium-gray ps-30px pe-40px lg-ps-15px lg-pe-15px last-paragraph-no-margin">
+            <span class="text-dark-gray fw-500 fs-20 xs-fs-18 alt-font ls-minus-05px">Business Prospects</span>
+            <p class="text-light-opacity">In European Market</p>
+          </div>
+          <div class="feature-box-overlay bg-base-color"></div>
+        </div>
+      </div>
+      <!-- end fancy text box item -->
+      <!-- start fancy text box item -->
+      <div class="col-lg-6 col-md-8 fancy-text-box-style-02  mb-30px">
+        <div class="feature-box feature-box-left-icon-middle h-100 bg-white hover-box dark-hover border-radius-6px ps-4 pe-4 pt-9 pb-9 box-shadow-extra-large box-shadow-extra-large-hover overflow-hidden">
+          <div class="feature-box-icon ms-40px me-40px lg-ms-15px lg-me-15px">
+            <h2 class="alt-font text-dark-gray fw-700 ls-minus-1px mb-0">
+              2022
+            </h2>
+          </div>
+          <div class="feature-box-content border-start border-color-extra-medium-gray ps-40px pe-40px lg-ps-15px lg-pe-15px last-paragraph-no-margin">
+            <span class="text-dark-gray fw-500 fs-20 alt-font ls-minus-05px">Business Establishment</span>
+            <p class="text-light-opacity">In Belguim & Latvia</p>
+          </div>
+          <div class="feature-box-overlay bg-base-color"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-8 fancy-text-box-style-02">
+        <div class="feature-box feature-box-left-icon-middle h-100 bg-white hover-box dark-hover border-radius-6px ps-4 pe-4 pt-9 pb-9 box-shadow-extra-large box-shadow-extra-large-hover overflow-hidden">
+          <div class="feature-box-icon ms-40px me-40px lg-ms-15px lg-me-15px">
+            <h2 class="alt-font text-dark-gray fw-700 ls-minus-1px mb-0">
+              2023
+            </h2>
+          </div>
+          <div class="feature-box-content border-start border-color-extra-medium-gray ps-40px pe-40px lg-ps-15px lg-pe-15px last-paragraph-no-margin">
+            <span class="text-dark-gray fw-500 fs-20 alt-font ls-minus-05px">Business Development</span>
+            <p class="text-light-opacity">In European & Middle East</p>
+          </div>
+          <div class="feature-box-overlay bg-base-color"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-8 fancy-text-box-style-02">
+        <div class="feature-box feature-box-left-icon-middle h-100 bg-white hover-box dark-hover border-radius-6px ps-4 pe-4 pt-9 pb-9 box-shadow-extra-large box-shadow-extra-large-hover overflow-hidden">
+          <div class="feature-box-icon ms-40px me-40px lg-ms-15px lg-me-15px">
+            <h2 class="alt-font text-dark-gray fw-700 ls-minus-1px mb-0">
+              2024
+            </h2>
+          </div>
+          <div class="feature-box-content border-start border-color-extra-medium-gray ps-40px pe-40px lg-ps-15px lg-pe-15px last-paragraph-no-margin">
+            <span class="text-dark-gray fw-500 fs-20 alt-font ls-minus-05px">Team Formation</span>
+            <p class="text-light-opacity">In European & Middle East</p>
+          </div>
+          <div class="feature-box-overlay bg-base-color"></div>
+        </div>
+      </div>
+      <!-- end fancy text box item -->
+    </div>
+  </div>
+</section>
+<!-- end section -->
+<!-- start section -->
+<section class="bg-solitude-blue">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-xl-8 col-lg-8 col-sm-10 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+
+        <h5 class="alt-font text-dark-gray ls-minus-1px">Our motto, "Your Satisfaction Drives Our Services" signifies our commitment to improving quality & sustainability in alignment with the standards of the European international market.</h5>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "willchange": "transform", "scale":[0.95,1], "opacity": [0, 1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+      <!-- start features box item -->
+      <div class="col-lg-4 icon-with-text-style-04 transition-inner-all md-mb-30px">
+        <div class="feature-box hover-box transition dark-hover bg-transparent border-radius-6px pt-17 pb-17 ps-14 pe-14 last-paragraph-no-margin  box-shadow-hover overflow-hidden">
+
+          <div class="feature-box-content">
+            <span class="d-inline-block alt-font text-dark-gray fw-500 fs-18 mb-5px">Our Mission: </span>
+            <p class="text-light-opacity">
+              Striving for excellence & sustainability in the workplace, aligning with the highest international standards.
             </p>
           </div>
+          <div class="feature-box-overlay bg-base-color"></div>
         </div>
       </div>
       <!-- end features box item -->
       <!-- start features box item -->
-      <div class="col icon-with-text-style-09 md-mb-50px">
-        <div class="feature-box">
-          <div class="feature-box-icon feature-box-icon-rounded dark-hover box-shadow-medium-bottom w-110px h-110px rounded-circle mb-25px">
-            <i class="line-icon-Money-Bag icon-large text-base-color"></i>
-            <div class="feature-box-icon-hover bg-base-color rounded-circle"></div>
-          </div>
-          <div class="feature-box-content last-paragraph-no-margin">
-            <span class="d-inline-block alt-font fw-500 text-dark-gray mb-5px fs-18">Money back guarantee</span>
-            <p class="w-90 sm-w-100 xs-w-80 m-auto">
-              Lorem ipsum simply dummy text printing typesetting.
+      <div class="col-lg-4 icon-with-text-style-04 transition-inner-all xs-mb-30px">
+        <div class="feature-box hover-box transition dark-hover   bg-white border-radius-6px pt-17 pb-17 ps-14 pe-14 last-paragraph-no-margin box-shadow-quadruple-large  box-shadow-hover overflow-hidden">
+
+          <div class="feature-box-content">
+            <span class="d-inline-block alt-font text-dark-gray fw-500 fs-18 mb-5px">Our Primary Focus:
+            </span>
+            <p class="text-light-opacity">
+              Empowering the BSafe Groups team to maintain the quality of our services for international clients.
             </p>
           </div>
+          <div class="feature-box-overlay bg-base-color"></div>
         </div>
       </div>
       <!-- end features box item -->
       <!-- start features box item -->
-      <div class="col icon-with-text-style-09 xs-mb-50px">
-        <div class="feature-box">
-          <div class="feature-box-icon feature-box-icon-rounded dark-hover box-shadow-medium-bottom w-110px h-110px rounded-circle mb-25px">
-            <i class="line-icon-Scale icon-large text-base-color"></i>
-            <div class="feature-box-icon-hover bg-base-color rounded-circle"></div>
-          </div>
-          <div class="feature-box-content last-paragraph-no-margin">
-            <span class="d-inline-block alt-font fw-500 text-dark-gray mb-5px fs-18">No hidden costs</span>
-            <p class="w-90 sm-w-100 xs-w-80 m-auto">
-              Lorem ipsum simply dummy text printing typesetting.
+      <div class="col-lg-4 icon-with-text-style-04 transition-inner-all md-mb-30px">
+        <div class="feature-box hover-box transition dark-hover  bg-transparent border-radius-6px pt-17 pb-17 ps-14 pe-14 last-paragraph-no-margin  box-shadow-hover overflow-hidden">
+
+          <div class="feature-box-content">
+            <span class="d-inline-block alt-font text-dark-gray fw-500 fs-18 mb-5px">Our Vision:</span>
+            <p class="text-light-opacity">
+              The objective is to establish a tranquil & cohesive work environment, fostering a culture of passion & harmony among all individuals.
             </p>
           </div>
+          <div class="feature-box-overlay bg-base-color"></div>
         </div>
       </div>
       <!-- end features box item -->
-      <!-- start features box item -->
-      <div class="col icon-with-text-style-09">
-        <div class="feature-box">
-          <div class="feature-box-icon feature-box-icon-rounded dark-hover box-shadow-medium-bottom w-110px h-110px rounded-circle mb-25px">
-            <i class="line-icon-Administrator icon-large text-base-color"></i>
-            <div class="feature-box-icon-hover bg-base-color rounded-circle"></div>
-          </div>
-          <div class="feature-box-content last-paragraph-no-margin">
-            <span class="d-inline-block alt-font fw-500 text-dark-gray mb-5px fs-18">Customer satisfaction</span>
-            <p class="w-90 sm-w-100 xs-w-80 m-auto">
-              Lorem ipsum simply dummy text printing typesetting.
+
+
+      <!-- end features box item -->
+    </div>
+
+  </div>
+</section>
+<!-- start section -->
+<section>
+  <div class="container">
+    <div class="row justify-content-center mb-3">
+      <div class="col-xl-5 col-lg-6 col-sm-8 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        <span class="bg-solitude-blue text-uppercase fs-13 ps-25px pe-25px alt-font fw-600 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px">Creative team</span>
+        <h3 class="alt-font text-dark-gray fw-600 ls-minus-2px">
+          Meet With Our International Team
+        </h3>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "translateY": [50, 0], "translateX": [-30, 0], "opacity": [0,1], "duration": 700, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+      <!-- start team member item -->
+      <div class="col text-center team-style-05 mt-25px ">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/nameer-img.jpeg" class="border-radius-4px" alt="" />
+          <!-- img size 600*756-->
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              Oversees the operational activities of BSG's multinational team to drive efficiency & maximize productivity for international clients.
             </p>
+            <div class="social-icon fs-19">
+              <a href="https://www.linkedin.com/in/-a15550279/" target="_blank" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">
+          Nameer Khzam
+        </div>
+        <span>Chief Operating Officer</span>
       </div>
-      <!-- end features box item -->
+      <!-- end team member item -->
+
+      <div class="col text-center team-style-05 mt-25px">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/ameer.jpg" class="border-radius-4px" alt="" />
+          <!-- img size 600*756-->
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              Develop comprehensive online & offline campaign strategies to enhance brand visibility & drive product sales.
+            </p>
+
+            <!--
+            <div class="social-icon fs-19">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">
+          Ameer AL
+        </div>
+        <span>Web Developer Manager</span>
+      </div>
+      <!-- start team member item -->
+      <div class="col text-center team-style-05 mt-25px">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/fadila.jpg" class="border-radius-4px" alt="" />
+          <!-- img size 600*756-->
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              Develop, implement, & enhance the brand experience while actively seeking & addressing customer feedback & expectations through market research.
+            </p>
+
+            <!--
+            <div class="social-icon fs-19">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">
+          Fadila SH
+        </div>
+        <span>Graphic Designer</span>
+      </div>
+      <!-- end team member item -->
+      <!-- start team member item -->
+      <div class="col text-center team-style-05 mt-25px">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/fadi-img.jpg" class="border-radius-4px" alt="" />
+          <!-- img size 600*756-->
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              Plan for future growth by identifying new opportunities, forming partnerships, & adding value to a company
+            </p>
+
+          </div>
+        </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">Fadi KH</div>
+        <span>Business Development</span>
+      </div>
+      <!-- <div class="col text-center team-style-05 md-mb-35px">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/ameer.jpg" class="border-radius-4px" alt="" />
+         
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              Specializing in developing functional web solutions, including front-end, back-end, & mobile applications, turning ideas into reality.
+            </p>
+     
+          </div>
+        </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">Ameer Almostafa</div>
+        <span>Web Applications Developer</span>
+      </div> -->
+      <!-- end team member item -->
+      <!-- start team member item -->
+
+      <div class="col text-center team-style-05 mt-25px">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/Hisham.jpg" class="border-radius-4px" alt="" />
+          <!-- img size 600*756-->
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              An adept negotiator proficient in handling contractual agreements, complemented by a master's degree in international & European law.
+
+            </p>
+
+            <!--
+            <div class="social-icon fs-19">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">
+          Hisham AL
+
+        </div>
+        <span>Contracts Management</span>
+      </div>
+      <div class="col text-center team-style-05 mt-25px">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/Erol.jpg" class="border-radius-4px" alt="" />
+          <!-- img size 600*756-->
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              Conduct manual & automated tests to ensure software & websites run smoothly during development, preventing faulty apps & other issues from reaching the customer.
+            </p>
+
+            <!--
+            <div class="social-icon fs-19">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">
+          Erol ĆE
+        </div>
+        <span>Web Quality Assurance</span>
+      </div>
+
+      <div class="col text-center team-style-05  mt-25px">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/Benjamin.jpg" class="border-radius-4px" alt="" />
+          <!-- img size 600*756 -->
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              Leads & guides dissertation, thesis writing, and transcription proposal writing. Delivering high-quality, tailored solutions. Committed to exceeding client expectations with meticulous attention to detail and dedication to success.
+            </p>
+
+          </div>
+        </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">
+          Benjamin BE
+        </div>
+        <span>Educational Services</span>
+      </div>
+      <div class="col text-center team-style-05  mt-25px">
+        <div class="position-relative mb-30px last-paragraph-no-margin">
+          <img src="/static/assets/images/team/ali-img.jpg" class="border-radius-4px" alt="" />
+          <!-- img size 600*756 -->
+          <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center border-radius-4px p-40px team-content bg-base-color-transparent">
+            <p class="text-white w-80 lg-w-75 sm-w-80 absolute-middle-center opacity-7">
+              Leveraging software development & advanced IT management methodologies to devise pioneering solutions to overarching business strategy.
+            </p>
+
+          </div>
+        </div>
+        <div class="alt-font fw-500 text-dark-gray lh-22 fs-18">
+          Ali AL
+        </div>
+        <span>Web Applications Developer</span>
+      </div>
+
+
+      <!-- end team member item -->
+
     </div>
   </div>
 </section>
 <!-- end section -->
 
 <!-- start section -->
-<section class="bg-solitude-blue">
+<section class="pt-0">
   <div class="container">
-    <div class="row justify-content-center mb-5">
-      <div class="col-xl-6 col-lg-8 col-sm-10 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-        <span class="bg-white box-shadow-quadruple-large text-uppercase fs-13 ps-25px pe-25px alt-font fw-600 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px">Predictable pricing</span>
-        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px">
-          We have tailored pricing plans for everyone
-        </h3>
-      </div>
-    </div>
-    <div class="row align-items-center justify-content-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
-      <!-- start pricing item -->
-      <div class="col-lg-4 col-md-8 pricing-table-style-01">
-        <!-- start pricing table -->
-        <div class="pricing-table text-center p-15">
-          <div class="pricing-header">
-            <div class="d-inline-block alt-font fw-500 text-base-color text-uppercase">
-              HSEQ management systems
-            </div>
-            <h3 class="text-dark-gray mb-0 fw-500 ls-minus-2px">
-              <sup class="fs-26">€</sup>79
-            </h3>
-            <div class="fs-14 lh-20">starting</div>
+    <div class="row position-relative clients-style-08 mt-25px" data-anime='{ "opacity": [0,1], "duration": 600, "delay":200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+      <div class="col swiper text-center feather-shadow"
+        data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "speed": 3000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false}, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 5 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }'>
+        <div class="swiper-wrapper marquee-slide">
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/equans.png" alt="" /></a>
           </div>
-          <div class="pricing-body pb-30px pt-20px">
-            <ul class="list-style-01 ps-0 mb-0">
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                HSEQ manual establishment
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Policy & legal requirments
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Legal compliance
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Control of documentations
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Management systems review
-              </li>
-              <li class="pt-10px pb-10px">HSEQ operational controls</li>
-            </ul>
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/aether.png" alt="" /></a>
           </div>
-          <div class="pricing-footer">
-            <a href="#" class="btn btn-dark-gray btn-medium btn-rounded">Get started</a>
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/tatco-logo.webp" alt="" /></a>
           </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/parsons-logo.jpeg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/arabtec-logo.png" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/tecnimont.png" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/bortalis.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/north25-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/dp-logo.jpeg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/coengr-logo.jpeg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/DEC-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/altorath-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/Musanada-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/Bloom-logo.jpg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/CPM-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/ADAC-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/miral-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/elm-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/alhusam-group-logo.jpg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+
+          <!-- end client item -->
+
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/BESIX-logo.webp" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/hill-logo.webp" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/Dorsch-Logo.svg" alt="" /></a>
+          </div>
+          <!-- end client item -->
+          <!-- start client item -->
+          <div class="swiper-slide">
+            <a href="#"><img src="/static/assets/images/clients/aecom-logo.png" alt="" /></a>
+          </div>
+          <!-- end client item -->
         </div>
       </div>
-      <!-- end pricing item -->
-
-      <!-- start pricing item -->
-      <div class="col-lg-4 col-md-8 pricing-table-style-01 popular-item">
-        <div class="pricing-table bg-white box-shadow-extra-large border-radius-6px text-center ps-15 pe-15 pt-20 pb-20">
-          <div class="pricing-header">
-            <div class="d-inline-block alt-font fw-500 text-base-color text-uppercase">
-              Site HSE Field Trainings
-            </div>
-            <h3 class="text-dark-gray mb-0 fw-500 ls-minus-2px">
-              <sup class="fs-26">€</sup>89
-            </h3>
-            <div class="fs-14 lh-20">starting</div>
-          </div>
-          <div class="pricing-body pb-30px pt-20px">
-            <ul class="list-style-01 ps-0 mb-0">
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Occupational health
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Occupational safety
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Risk assessment & management
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Safety culture & behaviour
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Emergency preparedness
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                HSEQ colseout reports
-              </li>
-              <li class="pt-10px pb-10px">
-                Hazards identification & mitigation
-              </li>
-            </ul>
-          </div>
-          <div class="pricing-footer">
-            <a href="#" class="btn btn-base-color btn-large btn-rounded">Get started</a>
-          </div>
-        </div>
-      </div>
-      <!-- end pricing item -->
-
-      <!-- start pricing item -->
-      <div class="col-lg-4 col-md-8 pricing-table-style-01">
-        <div class="pricing-table text-center p-15">
-          <div class="pricing-header">
-            <div class="d-inline-block alt-font fw-500 text-base-color text-uppercase">
-              HSE Deployment
-            </div>
-            <h3 class="text-dark-gray mb-0 fw-500 ls-minus-2px">
-              <sup class="fs-26">€</sup>99
-            </h3>
-            <div class="fs-14 lh-20">starting</div>
-          </div>
-          <div class="pricing-body pb-30px pt-20px">
-            <ul class="list-style-01 ps-0 mb-0">
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                HSE officer
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                HSE engineer
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                HSEQ manager
-              </li>
-              <li class="pt-10px pb-10px">HSEQ Director</li>
-            </ul>
-          </div>
-          <div class="pricing-footer">
-            <a href="#" class="btn btn-dark-gray btn-medium btn-rounded">Get started</a>
-          </div>
-        </div>
-      </div>
-      <!-- end pricing item -->
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-6 text-center mt-5" data-anime='{ "el": "childs", "translate": [50, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-        <span class="alt-font fs-22 d-block fw-500 text-dark-gray">Looking for a customize plan?</span>
-        <span><a href="contact.html" class="text-decoration-line-bottom text-dark-gray fw-500">Contact our team</a>
-          to get a quote.</span>
-      </div>
-    </div>
-
-    <div class="row align-items-center justify-content-center mt-5" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
-      <!-- start pricing item -->
-      <div class="col-lg-4 col-md-8 pricing-table-style-01">
-        <!-- start pricing table -->
-        <div class="pricing-table text-center p-15">
-          <div class="pricing-header">
-            <div class="d-inline-block alt-font fw-500 text-base-color text-uppercase">
-              Construction Management
-            </div>
-            <h3 class="text-dark-gray mb-0 fw-500 ls-minus-2px">
-              <sup class="fs-26">€</sup>99
-            </h3>
-            <div class="fs-14 lh-20">starting</div>
-          </div>
-          <div class="pricing-body pb-30px pt-20px">
-            <ul class="list-style-01 ps-0 mb-0">
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Operations manager
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Operations director
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Site engineer
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Construction manager
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Project manager
-              </li>
-              <li class="pt-10px pb-10px">Construction strategy manager</li>
-            </ul>
-          </div>
-          <div class="pricing-footer">
-            <a href="#" class="btn btn-dark-gray btn-medium btn-rounded">Get started</a>
-          </div>
-        </div>
-      </div>
-      <!-- end pricing item -->
-
-      <!-- start pricing item -->
-      <div class="col-lg-4 col-md-8 pricing-table-style-01 popular-item">
-        <div class="pricing-table bg-white box-shadow-extra-large border-radius-6px text-center ps-15 pe-15 pt-20 pb-20">
-          <div class="pricing-header">
-            <div class="d-inline-block alt-font fw-500 text-base-color text-uppercase">
-              Property inspections
-            </div>
-            <h3 class="text-dark-gray mb-0 fw-500 ls-minus-2px">
-              <sup class="fs-26">€</sup>89
-            </h3>
-            <div class="fs-14 lh-20">starting</div>
-          </div>
-          <div class="pricing-body pb-30px pt-20px">
-            <ul class="list-style-01 ps-0 mb-0">
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Consultation de état des lieux
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Facility Management
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Fire & safey management
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Maintainance supervision
-              </li>
-            </ul>
-          </div>
-          <div class="pricing-footer">
-            <a href="#" class="btn btn-base-color btn-large btn-rounded">Get started</a>
-          </div>
-        </div>
-      </div>
-      <!-- end pricing item -->
-
-      <!-- start pricing item -->
-      <div class="col-lg-4 col-md-8 pricing-table-style-01">
-        <div class="pricing-table text-center p-15">
-          <div class="pricing-header">
-            <div class="d-inline-block alt-font fw-500 text-base-color text-uppercase">
-              Branding & Marketing
-            </div>
-            <h3 class="text-dark-gray mb-0 fw-500 ls-minus-2px">
-              <sup class="fs-26">€</sup>79
-            </h3>
-            <div class="fs-14 lh-20">starting</div>
-          </div>
-          <div class="pricing-body pb-30px pt-20px">
-            <ul class="list-style-01 ps-0 mb-0">
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Design implementation
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Risk & quality management
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                Cost & innovation management
-              </li>
-              <li class="border-color-transparent-dark-very-light pt-10px pb-10px">
-                24/7 Emergency maintainance
-              </li>
-              <li class="pt-10px pb-10px">Contractors pre-qualifications</li>
-            </ul>
-          </div>
-          <div class="pricing-footer">
-            <a href="#" class="btn btn-dark-gray btn-medium btn-rounded">Get started</a>
-          </div>
-        </div>
-      </div>
-      <!-- end pricing item -->
     </div>
   </div>
 </section>
 <!-- end section -->
 {% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% load static %}
+
+<header>
+
+  <nav class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed" data-header-hover="dark">
+    <div class="container-fluid">
+      <div class="col-lg-6 col-3 me-lg-0 me-auto d-flex d-lg-flex">
+        <div class="header-icon">
+          <div class="header-social-icon icon">
+            <a href="https://www.facebook.com/profile.php?id=61566862343062" target="_blank"><i class="fa-brands  fa-facebook-f sm-fs-15 text-white-linear"></i></a>
+            <a href="https://www.linkedin.com/company/www-bsafegroup-eu/posts/?feedView=all" target="_blank"><i class="fa-brands fa-linkedin sm-fs-15 text-white-linear"></i></a>
+            <a href="https://www.youtube.com/@BSafeGroup" target="_blank"><i class="fa-brands fa-youtube sm-fs-15 text-white-linear"></i></a>
+            <a href="https://www.instagram.com/bsafegroup.be/" target="_blank"><i class="fa-brands fa-instagram sm-fs-15 text-white-linear"></i></a>
+            <a href="https://x.com/bsafegroup2022" target="_blank"><i class="fa-brands sm-fs-15 fa-x text-white-linear "></i></a>
+            <a href="https://www.tiktok.com/@bsafegroup" target="_blank"><i class="fa-brands sm-fs-15 fa-tiktok text-white-linear "></i></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-auto">
+        <a class="navbar-brand" href="demo-horizontal-portfolio.html">
+          <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="default-logo">
+          <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="alt-logo">
+          <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="" class="mobile-logo">
+        </a>
+      </div>
+      <div class="col-auto col-lg-6 text-end">
+
+        <div class="header-icon header-push-button d-flex hamburger-push-button icon">
+          <div class="header-button me-15px">
+            <a href="{% url 'contact:contact' %}"><button class="btn btn-small bg-base-color text-white btn-rounded">
+                Where to start
+              </button></a>
+          </div>
+          <div class="push-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="push-menu hamburger-nav header-dark hamburger-menu-simple bg-black">
+    <span class="close-menu text-dark-gray bg-white fs-18"><i class="fa-solid fa-xmark"></i></span>
+    <div class="d-flex flex-column align-items-center justify-content-center h-100 p-5 lg-p-7 sm-px-0">
+      <a class="hamburger-logo" href="demo-horizontal-portfolio.html">
+        <img src="images/demo-horizontal-portfolio-logo.png" data-at2x="images/demo-horizontal-portfolio-logo@2x.png" alt="">
+      </a>
+      <div class="row align-items-center justify-content-center">
+        <div class="hamburger-menu menu-list-wrapper col-lg-5 lg-no-margin offset-lg-1" data-scroll-options='{ "theme": "light" }'>
+          <ul class="menu-item-list fw-500 alt-font text-center text-lg-start">
+            <li class="menu-item"><a href="{% url 'home:home' %}" class="nav-link">Home</a></li>
+            <li class="menu-item"><a href="{% url 'home:about' %}" class="nav-link">About</a></li>
+            <li class="menu-item ">
+              <a class="nav-link" href="{%url 'home:services' %}">
+                Services
+              </a>
+            </li>
+            <li class="menu-item"><a href="{% url 'home:clients' %}" class="nav-link">Clients</a></li>
+            <li class="menu-item"><a href="{% url 'blog:blog' %}" class="nav-link">Blog</a></li>
+            <li class="menu-item"><a href="{% url 'home:faq' %}" class="nav-link">FAQ</a></li>
+            <li class="menu-item"><a href="{% url 'contact:contact' %}" class="nav-link">Contact</a></li>
+            <li class="menu-item"><a href="{% url 'contact:contact' %}" class="nav-link btn btn-small bg-base-color text-white btn-rounded">Where to start</a></li>
+            <div class="col-12 d-flex d-lg-none  elements-social social-icon-style-10">
+              <ul class="light">
+                <li class="me-15px">
+                  <a class="facebook" href="https://www.facebook.com/profile.php?id=61566862343062" target="_blank">Fb.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="instagram" href="https://www.instagram.com/bsafegroup.be/" target="_blank">Ig.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="twitter" href="https://www.linkedin.com/company/www-bsafegroup-eu/posts/?feedView=all" target="_blank">Ln.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="behance" href="https://www.youtube.com/@BSafeGroup" target="_blank">Yb.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="behance" href="https://x.com/bsafegroup2022" target="_blank">X.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="behance" href="https://www.tiktok.com/@bsafegroup" target="_blank">TK.</a>
+                </li>
+                <li>
+                  <a class="behance" href="https://www.pinterest.com/bsafegroupbe/" target="_blank">Pt.</a>
+                </li>
+              </ul>
+            </div>
+
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-4 d-none d-lg-inline-block offset-xl-1 offset-lg-1">
+          <div class="row menu-address">
+            <div class="col-12 mb-40px">
+              <span class="text-white fw-500 mb-5px d-block">Direct Contact</span>
+              <div class="d-block">
+                <span>Whatsapp:</span> <a href="https://wa.me/32470982341"><i class="fa-brands fa-whatsapp me-10px"></i>+32 470 98 23 41</a>
+              </div>
+              <div class="d-block">
+                <span>Mobile:</span> <a href="https://wa.me/+32033861949"><i class="fa-solid fa-phone me-10px"></i>+32 033 86 19 49</a>
+              </div>
+              <div class="d-block">
+                <span>Email:</span> <a href="mailto:info@bsafegroup.eu">info@bsafegroup.eu</a>
+              </div>
+            </div>
+            <div class="col-12 last-paragraph-no-margin mb-40px">
+              <span class="text-white fw-500 mb-5px d-block">Contact Address</span>
+              <p class="mb-10px">Belguim - Brussels & Flanders</p>
+              <p class="ps-3 mb-0">- Pl. Adolphe Sax, 1050 Ixelles - Brussels 1050 <br>- Vrasenestraat, 9100 Sint-Niklaas - Flanders 9100</p>
+              <p class="mb-10px">Latvia - Rega</p>
+              <p class=" ps-3 mb-0">- Stockmann, 13. janvāra iela 8, 3rd floor</p>
+
+            </div>
+            <div class="col-12 elements-social social-icon-style-10">
+              <ul class="light">
+                <li class="me-15px">
+                  <a class="facebook" href="https://www.facebook.com/profile.php?id=61566862343062" target="_blank">Fb.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="instagram" href="https://www.instagram.com/bsafegroup.be/" target="_blank">Ig.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="twitter" href="https://www.linkedin.com/company/www-bsafegroup-eu/posts/?feedView=all" target="_blank">Ln.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="behance" href="https://www.youtube.com/@BSafeGroup" target="_blank">Yb.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="behance" href="https://x.com/bsafegroup2022" target="_blank">X.</a>
+                </li>
+                <li class="me-15px">
+                  <a class="behance" href="https://www.tiktok.com/@bsafegroup" target="_blank">TK.</a>
+                </li>
+                <li>
+                  <a class="behance" href="https://www.pinterest.com/bsafegroupbe/" target="_blank">Pt.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+{% load static %}
+<footer class="pt-5 pb-5 sm-pt-40px sm-pb-45px footer-dark bg-extra-medium-slate-blue">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <!-- start footer column -->
+      <div class="col-lg-3 col-sm-6 last-paragraph-no-margin order-5 order-sm-4 order-lg-1 text-center text-sm-start">
+        <a href="{% url 'home:home' %}" class="footer-logo mb-15px d-block d-lg-inline-block"><img src="{% static 'assets/images/bsafe/bsafe_logo.png'%}" /></a>
+
+        <p>
+          Copyright &COPY; 2021
+          <a href="{% url 'home:home' %}" target="_blank" class="text-white text-decoration-line-bottom">Powered By BsafeGroup</a>
+        </p>
+      </div>
+      <!-- end footer column -->
+      <!-- start footer column -->
+      <div class="col-4 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-1 order-lg-2">
+        <span class="alt-font d-block text-white mb-5px">Company</span>
+        <ul>
+          <li><a href="{% url 'home:about' %}">About Us</a></li>
+          <li><a href="{% url 'home:services' %}">Our Services</a></li>
+          <li><a href="{% url 'home:clients' %}">Our Clients</a></li>
+          <li><a href="{% url 'contact:contact' %}">Contact</a></li>
+        </ul>
+      </div>
+      <!-- end footer column -->
+      <!-- start footer column -->
+      <div class="col-7 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-2 order-lg-3 px-lg-2">
+        <span class="alt-font d-block text-white mb-5px">Services</span>
+        <ul>
+          <li>
+            <a href="{% url 'home:service_detail' service_type='HSEQ_management' %}">HSEQ Management</a>
+          </li>
+          <li>
+            <a href="{% url 'home:service_detail' service_type='HSE_deployment' %}">HSE Deployment</a>
+          </li>
+          <li>
+            <a href="{% url 'home:service_detail' service_type='HSE_Field_Trainings' %}">HSE Field Trainings</a>
+          </li>
+          <li>
+            <a href="{% url 'home:service_detail' service_type='construction_management' %}">Construction Management
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home:service_detail' service_type='website_applications' %}">Web Applications</a>
+          </li>
+          <li>
+            <a href="{% url 'home:service_detail' service_type='Marketing_Branding' %}">
+              Design Renovation
+            </a>
+          </li>
+          <li><a href="{% url 'home:service_detail' service_type='Thesis_Guidance' %}">Thesis Guidance</a></li>
+          <li><a href="{% url 'home:service_detail' service_type='Import_Export' %}">Import & Export</a></li>
+        </ul>
+      </div>
+      <!-- end footer column -->
+      <!-- start footer column -->
+      <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-3 order-lg-4">
+        <span class="alt-font d-block text-white mb-5px">Social connect</span>
+        <ul>
+          <li>
+            <a href="https://www.google.com/maps/place/Vrasenestraat+29,+9100+Sint-Niklaas/@51.1948024,4.1771513,17z/data=!3m1!4b1!4m6!3m5!1s0x47c38bf3e46a2523:0xd397e3f2213308f7!8m2!3d51.1948024!4d4.1797262!16s%2Fg%2F11cs7v739h?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank">Google Maps</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/bsafegroup/" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/98545009" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCEQGp-C3C1ocodfSstzC13g" target="_blank">Youtube</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/bsafegroup/" target="_blank">Instagram</a>
+          </li>
+          <li><a href="https://x.com/BsafeintlEU" target="_blank">X</a></li>
+          <li><a href="https://www.tiktok.com/@bsafegroup" target="_blank">Tiktok</a></li>
+
+        </ul>
+      </div>
+      <!-- end footer column -->
+      <!-- start footer column -->
+      <div class="col-7 col-lg-3 col-sm-6 xs-mb-30px last-paragraph-no-margin order-4 order-sm-5 order-lg-5">
+        <span class="alt-font d-block text-white mb-5px">Get in touch</span>
+        <p class="w-80 lg-w-100 md-w-70 sm-w-100 mb-10px">
+          Our Regional Service Areas
+        </p>
+        <div>
+          <i class="feather icon-feather-phone-call icon-very-small text-white me-10px"></i><a href="tel:+32033861949" class="text-white">+32 033 8619 49</a>
+        </div>
+
+        <div>
+          <i class="feather icon-feather-mail icon-very-small text-white me-10px"></i><a href="mailto:info@bsafegroup.eu" class="text-white text-decoration-line-bottom">info@bsafegroup.eu</a>
+        </div>
+
+      </div>
+      <!-- end footer column -->
+    </div>
+  </div>
+</footer>
