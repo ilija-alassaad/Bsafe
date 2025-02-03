@@ -9,6 +9,7 @@ urlpatterns = [
 
     path('services/', views.services, name='services'),
     path('FAQ/', views.faq, name='faq'),
+    path('careers/', views.career, name='career'),
     path('services/<str:service_type>/',
          ServicesDetails.as_view(), name='service_detail'),
 ]
