@@ -49,6 +49,8 @@ class ServicesDetails(View):
             'Marketing_Branding': 'Marketing_Branding.html',
             'Thesis_Guidance': 'thesis_guidance.html',
             'Import_Export': 'import_export.html',
+            'Logistics_Transport': 'logistics_transport.html',
+            'Food_Safety': 'food_safety.html',
         }
         template = service_template.get(service_type)
 
