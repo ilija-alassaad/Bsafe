@@ -98,10 +98,18 @@
           </div>
           <div class="progress mb-15 md-mb-70px bg-extra-medium-gray">
             <div class="progress-bar-title d-inline-block text-dark-gray fs-18 fw-500">
-              Thesis Guidance
+              Logistics & Transport
             </div>
             <div class="progress-bar bg-base-color" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="research">
               <span class="progress-bar-percent text-center bg-dark-gray fs-12 lh-14 fw-600 text-white">40%</span>
+            </div>
+          </div>
+          <div class="progress mb-15 md-mb-70px bg-extra-medium-gray">
+            <div class="progress-bar-title d-inline-block text-dark-gray fs-18 fw-500">
+              Food Safety & Hygiene
+            </div>
+            <div class="progress-bar bg-base-color" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="research">
+              <span class="progress-bar-percent text-center bg-dark-gray fs-12 lh-14 fw-600 text-white">60%</span>
             </div>
           </div>
           <!-- end progress bar item -->
@@ -128,12 +136,16 @@
   </div>
   <div class="container position-relative">
     <div class="position-absolute bottom-150px lg-bottom-50px z-index-minus-2 d-none d-lg-block"><img src="{%static 'assets/images/bsafe/hat.png' %}" data-bottom-top="transform: rotate(10deg) translateX(50px)" data-top-bottom="transform:rotate(-10deg) translateX(-50px)" alt="" /></div>
-    <div class="position-absolute top-minus-150px right-50px z-index-minus-2 d-none d-lg-block"><img src="{%static 'assets/images/bsafe/hat2.png' %}" data-bottom-top="transform: rotate(20deg) translateY(50px)" data-top-bottom="transform:rotate(-20deg) translateY(-50px)" alt="" /></div>
+    <div class="position-absolute top-minus-150px right-50px z-index-minus-2 opacity-6 d-none d-lg-block"><img src="{%static 'assets/images/bsafe/hat2.png' %}" data-bottom-top="transform: rotate(20deg) translateY(50px)" data-top-bottom="transform:rotate(-20deg) translateY(-50px)" alt="" /></div>
     <div class="row justify-content-center">
-      <div class="col-12 col-xl-8 text-center mb-3">
-        <h2 class="text-base-color fw-700 ls-minus-2px mb-40px">Get A Consultation Services</h2>
-        <a href="#" id="bookBtn" class="btn btn-extra-large btn-dark-gray btn-slide-down btn-rounded me-5px ms-5px mb-15px" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-url="{% url 'booking:book_appointment' %}">GET A QUOTE<span class="bg-white"></span></a>
-        <a href="{% url 'contact:contact' %}" class="btn btn-extra-large btn-transparent-dark-gray btn-slide-down btn-rounded me-5px ms-5px mb-15px">Contact US<span class="bg-dark-gray"></span></a>
+      <div class="col-12 col-xl-11 text-center mb-3">
+        <h3 class="text-base-color fw-700 ls-minus-2px mb-40px">Schedule a Consultation or Emergency Service</h2>
+        <a href="#" id="bookBtn" title="Focusing on the needs of your project" class="btn btn-extra-large btn-dark-gray btn-slide-down btn-rounded me-5px ms-5px mb-15px" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-url="{% url 'booking:book_appointment' %}">Appointments<span class="bg-white"></span></a>
+        <a href="{% url 'contact:contact' %}" title="Long-term planning represents our functions" class="btn btn-extra-large btn-transparent-dark-gray btn-slide-down btn-rounded me-5px ms-5px mb-15px">business request<span class="bg-dark-gray"></span></a>
+        <a href="https://wa.me/+31645300279" title="There is no emergency as we are by your side" class="btn btn-extra-large btn-transparent-dark-gray btn-slide-down btn-rounded me-5px ms-5px mb-15px">Emergency Demand<span class="bg-dark-gray"></span></a>
+        <a href="tel:+32470982341" title="Every call is handled with care and action" class="btn btn-extra-large btn-transparent-dark-gray btn-slide-down btn-rounded me-5px ms-5px mb-15px">
+          argent call<span class="bg-dark-gray"></span>
+        </a>
       </div>
     </div>
   </div>
@@ -178,7 +190,7 @@
                 class="feather icon-feather-arrow-right text-white icon-extra-medium"></i></a>
           </div>
           <div class="p-10 bg-white last-paragraph-no-margin text-center">
-            <a href="{% url 'home:service_detail' service_type='HSE_Field_Trainings' %}" class="d-inline-block fs-18 alt-font fw-500 text-dark-gray mb-5px">HSE Field Trainings</a>
+            <a href="{% url 'home:service_detail' service_type='HSE_Field_Trainings' %}" class="d-inline-block fs-18 alt-font fw-500 text-dark-gray mb-5px">Field Trainings</a>
             <p>Competence Protects Organizations</p>
           </div>
         </div>
@@ -193,7 +205,7 @@
                 class="feather icon-feather-arrow-right text-white icon-extra-medium"></i></a>
           </div>
           <div class="p-10 bg-white last-paragraph-no-margin text-center">
-            <a href="{% url 'home:service_detail' service_type='HSE_deployment' %}" class="d-inline-block fs-18 alt-font fw-500 text-dark-gray mb-5px">HSE Deployment</a>
+            <a href="{% url 'home:service_detail' service_type='HSE_deployment' %}" class="d-inline-block fs-18 alt-font fw-500 text-dark-gray mb-5px">Personnel Deployment</a>
             <p>Collaboration Equals Supervision</p>
           </div>
         </div>
@@ -210,7 +222,7 @@
                 class="feather icon-feather-arrow-right text-white icon-extra-medium"></i></a>
           </div>
           <div class="p-10 bg-white last-paragraph-no-margin text-center">
-            <a href="{% url 'home:service_detail' service_type='construction_management' %}" class="d-inline-block fs-18 alt-font fw-500 text-dark-gray mb-5px">Construction Management</a>
+            <a href="{% url 'home:service_detail' service_type='construction_management' %}" class="d-inline-block fs-18 alt-font fw-500 text-dark-gray mb-5px">Construction Solutions & Design</a>
             <p>Agile Expertise in Every Project Phase</p>
           </div>
         </div>
@@ -249,10 +261,10 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <!-- <div class="col">
         <div class="box-shadow-quadruple-large services-box-style-01 hover-box border-radius-5px overflow-hidden">
           <div class="position-relative box-image">
-            <img src="{%static 'assets/images/bsafe/services/Thesis.jpg' %}" alt="" /><!--img size 800*660-->
+            <img src="{%static 'assets/images/bsafe/services/Thesis.jpg' %}" alt="" />
             <div class="box-overlay bg-dark-gray"></div>
             <a href="{% url 'home:service_detail' service_type='Thesis_Guidance' %}" class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-60px h-60px rounded-circle box-shadow-quadruple-large border border-2 border-color-white"><i
                 class="feather icon-feather-arrow-right text-white icon-extra-medium"></i></a>
@@ -262,7 +274,7 @@
             <p>Study to Learn. Guide to Lead.</p>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="col">
         <div class="box-shadow-quadruple-large services-box-style-01 hover-box border-radius-5px overflow-hidden">
           <div class="position-relative box-image">
@@ -306,8 +318,8 @@
                 class="feather icon-feather-arrow-right text-white icon-extra-medium"></i></a>
           </div>
           <div class="p-10 bg-white last-paragraph-no-margin text-center">
-            <a href="{% url 'home:service_detail' service_type='Food_Safety' %}" class="d-inline-block fs-18 alt-font fw-500 text-dark-gray mb-5px">Food Safety and Hygiene</a>
-            <p>We help vendors meet all hygiene regulations</p>
+            <a href="{% url 'home:service_detail' service_type='Food_Safety' %}" class="d-inline-block fs-18 alt-font fw-500 text-dark-gray mb-5px">Food Safety & Hygiene</a>
+            <p>We Help Vendors Meet Regulations</p>
           </div>
         </div>
       </div>
